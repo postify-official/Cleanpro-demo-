@@ -8,35 +8,35 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --blue:#1a56db;--blue-d:#1239a5;--blue-l:#2563eb;--blue-ll:#dbeafe;--blue-xs:#eff6ff;
-  --teal:#0891b2;--teal-d:#0c5975;--teal-l:#06b6d4;--teal-ll:#cffafe;--teal-xs:#ecfeff;
-  --slate:#0f172a;--slate-m:#1e293b;--slate-l:#334155;
-  --neutral:#64748b;--neutral-l:#94a3b8;--neutral-ll:#cbd5e1;
-  --border:#e2e8f0;--border-l:#f1f5f9;
-  --surface:#ffffff;--bg:#f8fafc;--bg-d:#f1f5f9;
-  --green:#059669;--green-l:#d1fae5;--green-xs:#ecfdf5;
-  --red:#dc2626;--red-l:#fee2e2;--red-xs:#fef2f2;
-  --amber:#d97706;--amber-l:#fef3c7;
-  --sh-sm:0 1px 3px rgba(15,23,42,.06),0 1px 2px rgba(15,23,42,.04);
-  --sh:0 4px 6px -1px rgba(15,23,42,.07),0 2px 4px -1px rgba(15,23,42,.05);
-  --sh-md:0 10px 15px -3px rgba(15,23,42,.08),0 4px 6px -2px rgba(15,23,42,.05);
-  --sh-lg:0 20px 25px -5px rgba(15,23,42,.1),0 10px 10px -5px rgba(15,23,42,.04);
-  --sh-xl:0 25px 50px -12px rgba(15,23,42,.18);
-  --radius-sm:6px;--radius:10px;--radius-md:14px;--radius-lg:18px;--radius-xl:24px;
+  --blue:#0f8c6a;--blue-d:#0b5a45;--blue-l:#16a37e;--blue-ll:#d3f3e6;--blue-xs:#eefaf5;
+  --teal:#c2740b;--teal-d:#7c4a08;--teal-l:#e08e13;--teal-ll:#fbe6c4;--teal-xs:#fdf5e6;
+  --slate:#12201b;--slate-m:#1b2d26;--slate-l:#2c443b;
+  --neutral:#6b7568;--neutral-l:#98a297;--neutral-ll:#cdd4cb;
+  --border:#e6e2d8;--border-l:#f1efe8;
+  --surface:#ffffff;--bg:#faf8f3;--bg-d:#f2efe6;
+  --green:#0f8c6a;--green-l:#d3f3e6;--green-xs:#eefaf5;
+  --red:#c0392b;--red-l:#fbe3df;--red-xs:#fdf3f1;
+  --amber:#c2740b;--amber-l:#fbe6c4;
+  --sh-sm:0 1px 3px rgba(20,25,18,.07),0 1px 2px rgba(20,25,18,.05);
+  --sh:0 4px 6px -1px rgba(20,25,18,.08),0 2px 4px -1px rgba(20,25,18,.05);
+  --sh-md:0 10px 15px -3px rgba(20,25,18,.09),0 4px 6px -2px rgba(20,25,18,.05);
+  --sh-lg:0 20px 25px -5px rgba(20,25,18,.12),0 10px 10px -5px rgba(20,25,18,.04);
+  --sh-xl:0 25px 50px -12px rgba(15,20,15,.22);
+  --radius-sm:8px;--radius:12px;--radius-md:16px;--radius-lg:20px;--radius-xl:26px;
 }
 body{
   font-family:'DM Sans',sans-serif;
-  background:#f0f4f8;
+  background:#f3f1ea;
   min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:32px 16px 72px;
   background-image:
-    radial-gradient(ellipse 80% 40% at 50% 0%,rgba(26,86,219,.06) 0%,transparent 70%),
-    radial-gradient(ellipse 60% 30% at 90% 80%,rgba(8,145,178,.05) 0%,transparent 70%);
+    radial-gradient(ellipse 80% 40% at 50% 0%,rgba(15,140,106,.08) 0%,transparent 70%),
+    radial-gradient(ellipse 60% 30% at 90% 80%,rgba(194,116,11,.06) 0%,transparent 70%);
 }
 
 /* ===== PAGE HEADER ===== */
 .ptitle{text-align:center;margin-bottom:40px}
 .ptitle .logo-row{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:12px}
-.logo-mark{width:48px;height:48px;background:linear-gradient(135deg,var(--blue-d),var(--blue-l));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 8px 24px rgba(26,86,219,.28),0 0 0 1px rgba(26,86,219,.15)}
+.logo-mark{width:48px;height:48px;background:linear-gradient(135deg,var(--blue-d),var(--blue-l));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 8px 24px rgba(15,140,106,.3),0 0 0 1px rgba(15,140,106,.15)}
 .ptitle h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.75rem;font-weight:800;color:var(--slate);letter-spacing:-0.5px}
 .ptitle h1 em{font-style:normal;color:var(--blue-l)}
 .ptitle p{font-size:.8rem;color:var(--neutral);margin-top:6px;font-weight:400;letter-spacing:.1px}
@@ -47,23 +47,23 @@ body{
 .phones-row{display:flex;gap:28px;justify-content:center;align-items:flex-start;flex-wrap:wrap}
 .phone-col{display:flex;flex-direction:column;align-items:center;gap:12px}
 .phone-tag{font-size:.65rem;font-weight:600;letter-spacing:.5px;text-transform:uppercase;padding:5px 14px;border-radius:100px;border:1px solid}
-.phone-tag.client{background:var(--blue-xs);color:var(--blue-d);border-color:rgba(26,86,219,.15)}
-.phone-tag.cleaner{background:var(--teal-xs);color:var(--teal-d);border-color:rgba(8,145,178,.15)}
+.phone-tag.client{background:var(--blue-xs);color:var(--blue-d);border-color:rgba(15,140,106,.18)}
+.phone-tag.cleaner{background:var(--teal-xs);color:var(--teal-d);border-color:rgba(194,116,11,.18)}
 .phone-tag.admin{background:var(--bg-d);color:var(--slate-l);border-color:var(--border)}
 
 /* ===== PHONE FRAME ===== */
 .phone-outer{
-  width:318px;background:#c8c8cc;border-radius:50px;padding:10px;
+  width:318px;background:#c9c7c0;border-radius:50px;padding:10px;
   box-shadow:
     0 0 0 1px rgba(0,0,0,.12),
     inset 0 0 0 1px rgba(255,255,255,.7),
     var(--sh-xl),
-    0 8px 16px rgba(15,23,42,.1);
+    0 8px 16px rgba(15,20,15,.12);
   position:relative
 }
-.phone-outer::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:110px;height:26px;background:#c8c8cc;border-radius:0 0 16px 16px;z-index:30}
+.phone-outer::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:110px;height:26px;background:#c9c7c0;border-radius:0 0 16px 16px;z-index:30}
 .phone-outer::after{content:'';position:absolute;top:8px;left:50%;transform:translateX(-50%);width:8px;height:8px;background:rgba(0,0,0,.18);border-radius:50%;z-index:31}
-.btn-s{position:absolute;background:#b8b8bc;border-radius:3px}
+.btn-s{position:absolute;background:#b9b7b0;border-radius:3px}
 .btn-s.vu{right:-3px;top:120px;width:3px;height:30px}
 .btn-s.vd{right:-3px;top:158px;width:3px;height:30px}
 .btn-s.pw{left:-3px;top:148px;width:3px;height:55px}
@@ -106,28 +106,40 @@ body{
 .nav-it.active .nav-lb{color:var(--blue-l)}
 .nav-it.active .nav-ic{transform:translateY(-1px)}
 .teal-nav .nav-it.active .nav-lb{color:var(--teal-d)}
-.dark-nav-lb{font-size:.52rem;font-weight:500;color:rgba(255,255,255,.4);letter-spacing:.2px}
+.dark-nav-lb{font-size:.52rem;font-weight:500;color:rgba(255,255,255,.4)}
 .dark-nav-it.active .dark-nav-lb{color:var(--teal-l)}
 .nav-ic-wrap{position:relative;display:inline-block}
-.nbadge{position:absolute;top:-5px;right:-6px;background:#ef4444;color:#fff;font-size:.42rem;font-weight:700;border-radius:50%;width:14px;height:14px;display:flex;align-items:center;justify-content:center;border:2px solid var(--surface)}
+.nbadge{position:absolute;top:-5px;right:-6px;background:#e11d48;color:#fff;font-size:.42rem;font-weight:700;border-radius:50%;width:14px;height:14px;display:flex;align-items:center;justify-content:center;border:2px solid var(--surface)}
 
 /* ===== STATUS PILLS ===== */
 .pill{font-size:.53rem;font-weight:600;padding:3px 9px;border-radius:100px;letter-spacing:.2px;white-space:nowrap;border:1px solid}
-.pill-new{background:var(--blue-xs);color:var(--blue-d);border-color:rgba(26,86,219,.12)}
-.pill-acc{background:var(--green-xs);color:var(--green);border-color:rgba(5,150,105,.12)}
-.pill-rej{background:var(--red-xs);color:var(--red);border-color:rgba(220,38,38,.12)}
-.pill-pend{background:var(--amber-l);color:var(--amber);border-color:rgba(217,119,6,.15)}
+.pill-new{background:var(--blue-xs);color:var(--blue-d);border-color:rgba(15,140,106,.15)}
+.pill-acc{background:var(--green-xs);color:var(--green);border-color:rgba(15,140,106,.15)}
+.pill-rej{background:var(--red-xs);color:var(--red);border-color:rgba(192,57,43,.12)}
+.pill-pend{background:var(--amber-l);color:var(--amber);border-color:rgba(194,116,11,.18)}
 
 /* ===== HERO — CLIENT ===== */
-.hero{background:linear-gradient(145deg,var(--blue-d) 0%,var(--blue-l) 100%);margin:14px 14px 0;border-radius:var(--radius-lg);padding:22px 18px;position:relative;overflow:hidden;box-shadow:0 12px 32px rgba(26,86,219,.24),0 0 0 1px rgba(26,86,219,.1)}
-.hero::after{content:'';position:absolute;right:-28px;top:-28px;width:140px;height:140px;border-radius:50%;background:rgba(255,255,255,.07)}
-.hero-badge{background:rgba(255,255,255,.15);backdrop-filter:blur(8px);color:rgba(255,255,255,.9);font-size:.57rem;font-weight:600;padding:3px 10px;border-radius:100px;display:inline-block;margin-bottom:10px;border:1px solid rgba(255,255,255,.15)}
-.hero h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.15rem;font-weight:800;color:#fff;line-height:1.3;position:relative;z-index:1;margin-bottom:6px;letter-spacing:-.3px}
-.hero p{font-size:.65rem;color:rgba(255,255,255,.68);position:relative;z-index:1;margin-bottom:14px;line-height:1.6}
-.hero-btn{background:rgba(255,255,255,.15);backdrop-filter:blur(8px);color:#fff;border:1px solid rgba(255,255,255,.25);padding:9px 18px;border-radius:var(--radius-sm);font-family:'DM Sans',sans-serif;font-size:.73rem;font-weight:600;cursor:pointer;position:relative;z-index:1;transition:all .18s}
+.hero{
+  margin:14px 14px 0;border-radius:var(--radius-lg);padding:22px 18px;position:relative;overflow:hidden;
+  min-height:172px;display:flex;flex-direction:column;justify-content:flex-end;
+  background-image:linear-gradient(180deg,rgba(11,30,22,.35) 0%,rgba(8,20,15,.88) 100%),url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=70');
+  background-size:cover;background-position:center;
+  box-shadow:0 14px 34px rgba(11,60,45,.3),0 0 0 1px rgba(15,140,106,.12)
+}
+.hero-badge{background:rgba(255,255,255,.16);backdrop-filter:blur(8px);color:#fff;font-size:.57rem;font-weight:600;padding:4px 11px;border-radius:100px;display:inline-flex;align-items:center;gap:5px;margin-bottom:10px;border:1px solid rgba(255,255,255,.2);width:fit-content}
+.hero h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.2rem;font-weight:800;color:#fff;line-height:1.28;position:relative;z-index:1;margin-bottom:6px;letter-spacing:-.4px}
+.hero p{font-size:.66rem;color:rgba(255,255,255,.78);position:relative;z-index:1;margin-bottom:14px;line-height:1.6;max-width:88%}
+.hero-btn{background:#fff;color:var(--blue-d);border:none;padding:10px 18px;border-radius:var(--radius-sm);font-family:'Plus Jakarta Sans',sans-serif;font-size:.73rem;font-weight:700;cursor:pointer;position:relative;z-index:1;transition:all .18s;box-shadow:0 6px 16px rgba(0,0,0,.18)}
 .hero-btn:active{transform:scale(.96)}
 
-.stats-row{display:flex;margin:10px 14px 0;background:var(--surface);border-radius:var(--radius-md);padding:12px 0;border:1px solid var(--border);box-shadow:var(--sh-sm)}
+.promo-strip{margin:10px 14px 0;display:flex;gap:9px;overflow-x:auto;scrollbar-width:none;padding-bottom:1px}
+.promo-strip::-webkit-scrollbar{display:none}
+.promo-card{flex:0 0 auto;width:150px;border-radius:var(--radius-md);padding:11px 12px;position:relative;overflow:hidden;min-height:76px;display:flex;flex-direction:column;justify-content:flex-end;background-size:cover;background-position:center;box-shadow:var(--sh-sm)}
+.promo-card::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,15,12,.1),rgba(8,12,10,.8))}
+.promo-card .ptag{position:relative;z-index:1;font-size:.5rem;font-weight:700;color:#fff;background:var(--amber);padding:2px 7px;border-radius:100px;width:fit-content;margin-bottom:5px;letter-spacing:.2px}
+.promo-card .ptxt{position:relative;z-index:1;font-family:'Plus Jakarta Sans',sans-serif;font-size:.68rem;font-weight:700;color:#fff;line-height:1.3}
+
+.stats-row{display:flex;margin:12px 14px 0;background:var(--surface);border-radius:var(--radius-md);padding:12px 0;border:1px solid var(--border);box-shadow:var(--sh-sm)}
 .stat{flex:1;text-align:center;border-right:1px solid var(--border)}
 .stat:last-child{border-right:none}
 .stat-n{font-family:'Plus Jakarta Sans',sans-serif;font-size:.95rem;font-weight:700;color:var(--blue-l)}
@@ -136,17 +148,29 @@ body{
 .sec-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:.75rem;font-weight:700;color:var(--slate);padding:0 14px;margin:14px 0 8px;display:flex;align-items:center;gap:8px;letter-spacing:-.1px}
 .sec-title::after{content:'';flex:1;height:1px;background:var(--border)}
 
-/* ===== SERVICE GRID ===== */
-.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 14px 14px}
-.svc-card{background:var(--surface);border-radius:var(--radius-md);padding:14px 12px;cursor:pointer;border:1px solid var(--border);transition:all .18s;box-shadow:var(--sh-sm)}
-.svc-card:active{transform:scale(.95);box-shadow:none}
-.svc-em{font-size:20px}
-.svc-nm{font-size:.67rem;font-weight:600;color:var(--slate);margin-top:6px;line-height:1.35}
-.svc-tg{font-size:.5rem;font-weight:600;background:var(--blue-xs);color:var(--blue-d);padding:2px 7px;border-radius:100px;text-transform:uppercase;letter-spacing:.3px;width:fit-content;margin-top:5px;border:1px solid rgba(26,86,219,.1)}
+/* ===== SERVICE GRID (photo cards) ===== */
+.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:0 14px 14px}
+.svc-card{
+  position:relative;height:116px;border-radius:var(--radius-md);cursor:pointer;overflow:hidden;
+  border:1px solid var(--border);transition:all .18s;box-shadow:var(--sh-sm);
+  background-color:var(--bg-d);background-size:cover;background-position:center
+}
+.svc-card::after{content:'';position:absolute;inset:0;background:linear-gradient(195deg,rgba(10,16,13,.04) 30%,rgba(8,13,11,.82) 100%)}
+.svc-card:active{transform:scale(.96)}
+.svc-em{position:absolute;top:8px;left:8px;width:27px;height:27px;background:rgba(255,255,255,.95);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:13px;z-index:2;box-shadow:0 2px 6px rgba(0,0,0,.18)}
+.svc-nm{position:absolute;left:10px;right:10px;bottom:23px;z-index:2;font-size:.66rem;font-weight:700;line-height:1.32;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.35)}
+.svc-tg{position:absolute;left:10px;bottom:8px;z-index:2;font-size:.5rem;font-weight:600;background:rgba(255,255,255,.18);backdrop-filter:blur(6px);color:#fff;padding:2px 7px;border-radius:100px;text-transform:uppercase;letter-spacing:.3px;width:fit-content;border:1px solid rgba(255,255,255,.28)}
+
+.svc-grid .svc-card:nth-child(6n+1){background-image:url('https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=400&q=65')}
+.svc-grid .svc-card:nth-child(6n+2){background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=400&q=65')}
+.svc-grid .svc-card:nth-child(6n+3){background-image:url('https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=400&q=65')}
+.svc-grid .svc-card:nth-child(6n+4){background-image:url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=400&q=65')}
+.svc-grid .svc-card:nth-child(6n+5){background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=400&q=65')}
+.svc-grid .svc-card:nth-child(6n+6){background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=65')}
 
 /* ===== BOOKING FORM ===== */
 .bk-svc-bar{background:var(--surface);border-bottom:1px solid var(--border);padding:10px 14px 14px;flex-shrink:0}
-.bk-svc-inner{background:var(--blue-xs);border:1px solid rgba(26,86,219,.12);border-radius:var(--radius);padding:10px 13px;display:flex;align-items:center;gap:10px}
+.bk-svc-inner{background:var(--blue-xs);border:1px solid rgba(15,140,106,.16);border-radius:var(--radius);padding:10px 13px;display:flex;align-items:center;gap:10px}
 .bk-svc-inner .bem{font-size:18px}
 .bk-svc-info h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:.83rem;font-weight:700;color:var(--blue-d)}
 .bk-svc-info p{font-size:.6rem;color:var(--neutral);margin-top:1px}
@@ -167,15 +191,15 @@ body{
 .fld{margin-bottom:9px}
 .fld label{display:block;font-size:.6rem;font-weight:600;color:var(--neutral);margin-bottom:4px;letter-spacing:.1px}
 .fld input,.fld textarea,.fld select{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:9px 11px;font-family:'DM Sans',sans-serif;font-size:.73rem;color:var(--slate);outline:none;transition:border-color .15s,box-shadow .15s;-webkit-appearance:none}
-.fld input:focus,.fld textarea:focus,.fld select:focus{border-color:var(--blue-l);box-shadow:0 0 0 3px rgba(37,99,235,.1)}
+.fld input:focus,.fld textarea:focus,.fld select:focus{border-color:var(--blue-l);box-shadow:0 0 0 3px rgba(22,163,126,.12)}
 .fld textarea{resize:none;height:60px}
 .fld-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 
-.conf-btn{background:var(--blue-l);color:#fff;border:none;border-radius:var(--radius);padding:13px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.8rem;font-weight:700;width:calc(100% - 28px);margin:14px;cursor:pointer;box-shadow:0 4px 14px rgba(37,99,235,.28);transition:all .18s;display:flex;align-items:center;justify-content:center;gap:7px;letter-spacing:-.1px}
+.conf-btn{background:var(--blue-l);color:#fff;border:none;border-radius:var(--radius);padding:13px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.8rem;font-weight:700;width:calc(100% - 28px);margin:14px;cursor:pointer;box-shadow:0 4px 14px rgba(22,163,126,.32);transition:all .18s;display:flex;align-items:center;justify-content:center;gap:7px;letter-spacing:-.1px}
 .conf-btn:active{transform:scale(.97)}
 
 /* ===== CONFIRMED ===== */
-.check-wrap{width:68px;height:68px;background:linear-gradient(135deg,var(--blue-d),var(--blue-l));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:20px auto 12px;box-shadow:0 8px 24px rgba(26,86,219,.25)}
+.check-wrap{width:68px;height:68px;background:linear-gradient(135deg,var(--blue-d),var(--blue-l));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:20px auto 12px;box-shadow:0 8px 24px rgba(15,140,106,.3)}
 .check-ico{font-size:26px;color:#fff}
 .conf-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.05rem;font-weight:800;color:var(--slate);text-align:center;margin-bottom:4px;letter-spacing:-.3px}
 .conf-sub{font-size:.67rem;color:var(--neutral);text-align:center;margin-bottom:14px;padding:0 20px;line-height:1.6}
@@ -189,7 +213,7 @@ body{
 .bk-card{background:var(--surface);border-radius:var(--radius-md);margin:8px 14px 0;border:1px solid var(--border);overflow:hidden;box-shadow:var(--sh-sm);cursor:pointer;transition:box-shadow .18s}
 .bk-card:active{box-shadow:none}
 .bk-card-head{padding:12px 14px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--border-l)}
-.bk-card-ic{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--blue-xs);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0;border:1px solid rgba(26,86,219,.08)}
+.bk-card-ic{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--blue-xs);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0;border:1px solid rgba(15,140,106,.12)}
 .bk-info h4{font-size:.75rem;font-weight:600;color:var(--slate)}
 .bk-info p{font-size:.59rem;color:var(--neutral);margin-top:1px}
 .bk-card-body{padding:10px 14px}
@@ -209,7 +233,7 @@ body{
 
 /* ===== DETAIL ===== */
 .det-hdr-block{background:var(--surface);border-bottom:1px solid var(--border);padding:10px 14px 14px;flex-shrink:0}
-.det-svc-card{background:var(--blue-xs);border:1px solid rgba(26,86,219,.12);border-radius:var(--radius);padding:11px 13px;display:flex;align-items:center;gap:10px}
+.det-svc-card{background:var(--blue-xs);border:1px solid rgba(15,140,106,.16);border-radius:var(--radius);padding:11px 13px;display:flex;align-items:center;gap:10px}
 .det-svc-card .em{font-size:22px}
 .det-svc-info h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:.85rem;font-weight:700;color:var(--blue-d)}
 .det-svc-info p{font-size:.59rem;color:var(--neutral);margin-top:2px}
@@ -223,9 +247,9 @@ body{
 .det-v{font-size:.62rem;font-weight:600;color:var(--slate);text-align:right;max-width:60%}
 
 .status-banner{border-radius:var(--radius);padding:10px 13px;margin:12px 14px 0;display:flex;align-items:center;gap:9px;border:1px solid}
-.status-banner.pending{background:var(--amber-l);border-color:rgba(217,119,6,.2)}
-.status-banner.accepted{background:var(--green-xs);border-color:rgba(5,150,105,.15)}
-.status-banner.rejected{background:var(--red-xs);border-color:rgba(220,38,38,.12)}
+.status-banner.pending{background:var(--amber-l);border-color:rgba(194,116,11,.22)}
+.status-banner.accepted{background:var(--green-xs);border-color:rgba(15,140,106,.18)}
+.status-banner.rejected{background:var(--red-xs);border-color:rgba(192,57,43,.14)}
 .status-banner-ic{font-size:17px;flex-shrink:0}
 .status-banner-txt h5{font-size:.67rem;font-weight:600;color:var(--slate)}
 .status-banner-txt p{font-size:.57rem;color:var(--neutral);margin-top:1px}
@@ -247,12 +271,19 @@ body{
 .pmenu-ar{font-size:12px;color:var(--neutral-ll)}
 
 /* ===== CLEANER HERO ===== */
-.cl-hero{background:linear-gradient(145deg,var(--teal-d),var(--teal-l));margin:12px 14px 0;border-radius:var(--radius-md);padding:18px 16px;position:relative;overflow:hidden;box-shadow:0 10px 28px rgba(8,145,178,.22),0 0 0 1px rgba(8,145,178,.1)}
-.cl-hero::after{content:'';position:absolute;right:-22px;top:-22px;width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,.06)}
-.cl-hero-tag{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.9);font-size:.56rem;font-weight:600;padding:3px 9px;border-radius:100px;display:inline-block;margin-bottom:7px}
+.cl-hero{
+  margin:12px 14px 0;border-radius:var(--radius-md);padding:18px 16px;position:relative;overflow:hidden;min-height:128px;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  background-image:linear-gradient(180deg,rgba(35,22,4,.25) 0%,rgba(28,18,4,.86) 100%),url('https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=800&q=70');
+  background-size:cover;background-position:center 30%;
+  box-shadow:0 12px 30px rgba(124,74,8,.28),0 0 0 1px rgba(194,116,11,.14)
+}
+.cl-hero-tag{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.22);color:#fff;font-size:.56rem;font-weight:600;padding:3px 9px;border-radius:100px;display:inline-block;margin-bottom:7px;width:fit-content}
+.cl-hero-top{display:flex;align-items:center;gap:10px;margin-bottom:2px}
+.cl-hero-avatar{width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.55);box-shadow:0 3px 10px rgba(0,0,0,.25)}
 .cl-hero h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:.95rem;font-weight:700;color:#fff;margin-bottom:2px;letter-spacing:-.2px}
-.cl-hero p{font-size:.61rem;color:rgba(255,255,255,.65)}
-.online-dot{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:100px;padding:3px 10px;margin-top:9px}
+.cl-hero p{font-size:.61rem;color:rgba(255,255,255,.72)}
+.online-dot{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.2);border-radius:100px;padding:3px 10px;margin-top:9px;width:fit-content}
 .online-dot span.dot{width:6px;height:6px;border-radius:50%;background:#4ade80;display:inline-block;box-shadow:0 0 0 2px rgba(74,222,128,.25)}
 .online-dot span.lbl{font-size:.56rem;color:#fff;font-weight:500}
 
@@ -263,11 +294,11 @@ body{
 
 /* ===== JOB CARDS ===== */
 .job-card{background:var(--surface);border-radius:var(--radius-md);margin:7px 14px 0;padding:13px;border:1px solid var(--border);box-shadow:var(--sh-sm)}
-.job-card.new-job{border-color:rgba(8,145,178,.2);background:var(--teal-xs)}
+.job-card.new-job{border-color:rgba(194,116,11,.25);background:var(--teal-xs)}
 .job-card.clickable{cursor:pointer;transition:all .18s}
 .job-card.clickable:active{transform:scale(.98);box-shadow:none}
 .job-top{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px}
-.job-ic{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--teal-xs);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0;border:1px solid rgba(8,145,178,.12)}
+.job-ic{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--teal-xs);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0;border:1px solid rgba(194,116,11,.16)}
 .job-info{flex:1}
 .job-info h4{font-size:.74rem;font-weight:600;color:var(--slate)}
 .job-info p{font-size:.58rem;color:var(--neutral);margin-top:2px}
@@ -275,9 +306,9 @@ body{
 .job-meta-item .lbl{font-size:.53rem;color:var(--neutral-l);margin-bottom:1px;font-weight:400}
 .job-meta-item .val{font-size:.61rem;font-weight:600;color:var(--slate)}
 .job-actions{display:flex;gap:8px}
-.acc-btn{flex:1;background:var(--green);color:#fff;border:none;border-radius:var(--radius-sm);padding:9px;font-family:'DM Sans',sans-serif;font-size:.67rem;font-weight:600;cursor:pointer;transition:all .15s;box-shadow:0 3px 10px rgba(5,150,105,.2)}
+.acc-btn{flex:1;background:var(--green);color:#fff;border:none;border-radius:var(--radius-sm);padding:9px;font-family:'DM Sans',sans-serif;font-size:.67rem;font-weight:600;cursor:pointer;transition:all .15s;box-shadow:0 3px 10px rgba(15,140,106,.22)}
 .acc-btn:active{transform:scale(.96)}
-.rej-btn{flex:1;background:var(--surface);color:var(--red);border:1px solid rgba(220,38,38,.2);border-radius:var(--radius-sm);padding:9px;font-family:'DM Sans',sans-serif;font-size:.67rem;font-weight:600;cursor:pointer;transition:all .15s}
+.rej-btn{flex:1;background:var(--surface);color:var(--red);border:1px solid rgba(192,57,43,.22);border-radius:var(--radius-sm);padding:9px;font-family:'DM Sans',sans-serif;font-size:.67rem;font-weight:600;cursor:pointer;transition:all .15s}
 .tap-hint{font-size:.57rem;color:var(--neutral-l);text-align:center;margin-top:8px;font-style:italic}
 
 /* ===== CLEANER NOTIFS ===== */
@@ -290,7 +321,7 @@ body{
 
 /* ===== SCHEDULE ===== */
 .sched-card{background:var(--surface);border-radius:var(--radius);margin:7px 14px 0;padding:12px;border:1px solid var(--border);display:flex;align-items:center;gap:11px;box-shadow:var(--sh-sm)}
-.sched-date{width:38px;height:44px;background:var(--teal-xs);border:1px solid rgba(8,145,178,.1);border-radius:var(--radius-sm);display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0}
+.sched-date{width:38px;height:44px;background:var(--teal-xs);border:1px solid rgba(194,116,11,.14);border-radius:var(--radius-sm);display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0}
 .sched-day{font-size:.5rem;font-weight:700;color:var(--teal-d);text-transform:uppercase;letter-spacing:.5px}
 .sched-num{font-family:'Plus Jakarta Sans',sans-serif;font-size:.95rem;font-weight:700;color:var(--teal-d)}
 .sched-info{flex:1}
@@ -304,50 +335,54 @@ body{
 .adm-stat-card.blue::after{background:var(--blue-l)}
 .adm-stat-card.cyan::after{background:var(--teal-l)}
 .adm-stat-card.green::after{background:var(--green)}
-.adm-stat-card.red::after{background:#f97316}
+.adm-stat-card.red::after{background:#e08e13}
 .adm-stat-ic{font-size:20px;margin-bottom:8px}
 .adm-stat-n{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.1rem;font-weight:700;color:var(--slate)}
 .adm-stat-l{font-size:.53rem;color:var(--neutral);font-weight:500;text-transform:uppercase;letter-spacing:.3px;margin-top:2px}
 
 .adm-booking-row{background:var(--surface);border-radius:var(--radius);margin:7px 14px 0;padding:11px 13px;border:1px solid var(--border);display:flex;align-items:center;gap:9px;cursor:pointer;box-shadow:var(--sh-sm);transition:all .15s}
 .adm-booking-row:active{background:var(--bg-d)}
-.adm-bk-ic{width:34px;height:34px;border-radius:var(--radius-sm);background:var(--blue-xs);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;border:1px solid rgba(26,86,219,.08)}
+.adm-bk-ic{width:34px;height:34px;border-radius:var(--radius-sm);background:var(--blue-xs);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;border:1px solid rgba(15,140,106,.12)}
 .adm-bk-info{flex:1}
 .adm-bk-info h4{font-size:.71rem;font-weight:600;color:var(--slate)}
 .adm-bk-info p{font-size:.57rem;color:var(--neutral);margin-top:1px}
 
 .adm-cleaner-row{background:var(--surface);border-radius:var(--radius);margin:7px 14px 0;padding:11px 13px;border:1px solid var(--border);display:flex;align-items:center;gap:9px;box-shadow:var(--sh-sm)}
-.adm-av{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--blue-d),var(--blue-l));display:flex;align-items:center;justify-content:center;font-size:.62rem;font-weight:700;color:#fff;flex-shrink:0}
+.adm-av{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--blue-d),var(--blue-l));display:flex;align-items:center;justify-content:center;font-size:.62rem;font-weight:700;color:#fff;flex-shrink:0;object-fit:cover}
 .adm-cl-info{flex:1}
 .adm-cl-info h4{font-size:.71rem;font-weight:600;color:var(--slate)}
 .adm-cl-info p{font-size:.56rem;color:var(--neutral);margin-top:1px}
 .online-badge{font-size:.5rem;font-weight:600;padding:3px 8px;border-radius:100px;border:1px solid}
-.online-badge.on{background:var(--green-xs);color:var(--green);border-color:rgba(5,150,105,.15)}
+.online-badge.on{background:var(--green-xs);color:var(--green);border-color:rgba(15,140,106,.16)}
 .online-badge.off{background:var(--bg-d);color:var(--neutral);border-color:var(--border)}
 
 /* ===== LOGIN ===== */
-.login-wrap{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px 20px;background:var(--bg)}
-.login-logo{width:60px;height:60px;background:linear-gradient(135deg,var(--teal-d),var(--teal-l));border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:16px;box-shadow:0 8px 24px rgba(8,145,178,.25)}
-.login-wrap h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:800;color:var(--slate);margin-bottom:4px;letter-spacing:-.3px}
-.login-wrap>p{font-size:.67rem;color:var(--neutral);margin-bottom:22px;text-align:center;line-height:1.5}
+.login-wrap{
+  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px 20px;position:relative;overflow:hidden;
+  background-image:linear-gradient(180deg,rgba(20,13,2,.62) 0%,rgba(15,10,2,.93) 100%),url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=700&q=65');
+  background-size:cover;background-position:center
+}
+.login-logo{width:60px;height:60px;background:linear-gradient(135deg,var(--teal-d),var(--teal-l));border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:16px;box-shadow:0 8px 24px rgba(194,116,11,.35)}
+.login-wrap h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:800;color:#fff;margin-bottom:4px;letter-spacing:-.3px}
+.login-wrap>p{font-size:.67rem;color:rgba(255,255,255,.68);margin-bottom:22px;text-align:center;line-height:1.5}
 .cl-fld{margin-bottom:9px;width:100%}
-.cl-fld label{display:block;font-size:.6rem;font-weight:600;color:var(--neutral);margin-bottom:4px;text-transform:uppercase;letter-spacing:.3px}
-.cl-fld input{width:100%;border:1px solid var(--border);border-radius:var(--radius-sm);padding:10px 12px;font-family:'DM Sans',sans-serif;font-size:.73rem;color:var(--slate);background:var(--surface);outline:none;-webkit-appearance:none;transition:border-color .15s,box-shadow .15s}
-.cl-fld input:focus{border-color:var(--teal-l);box-shadow:0 0 0 3px rgba(6,182,212,.1)}
-.cl-login-btn{background:var(--teal-l);color:#fff;border:none;border-radius:var(--radius);padding:12px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.8rem;font-weight:700;width:100%;cursor:pointer;margin-top:4px;box-shadow:0 4px 14px rgba(6,182,212,.25);transition:all .18s}
+.cl-fld label{display:block;font-size:.6rem;font-weight:600;color:rgba(255,255,255,.65);margin-bottom:4px;text-transform:uppercase;letter-spacing:.3px}
+.cl-fld input{width:100%;border:1px solid rgba(255,255,255,.18);border-radius:var(--radius-sm);padding:10px 12px;font-family:'DM Sans',sans-serif;font-size:.73rem;color:#fff;background:rgba(255,255,255,.08);outline:none;-webkit-appearance:none;transition:border-color .15s,box-shadow .15s}
+.cl-fld input:focus{border-color:var(--teal-l);box-shadow:0 0 0 3px rgba(224,142,19,.18)}
+.cl-login-btn{background:var(--teal-l);color:#fff;border:none;border-radius:var(--radius);padding:12px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.8rem;font-weight:700;width:100%;cursor:pointer;margin-top:4px;box-shadow:0 4px 14px rgba(224,142,19,.32);transition:all .18s}
 .cl-login-btn:active{transform:scale(.97)}
-.login-hint{font-size:.56rem;color:var(--neutral-l);margin-top:12px;text-align:center}
-.login-hint span{color:var(--teal-d);font-weight:600}
+.login-hint{font-size:.56rem;color:rgba(255,255,255,.45);margin-top:12px;text-align:center}
+.login-hint span{color:var(--teal-l);font-weight:600}
 
 .adm-login-wrap{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px 20px;background:var(--slate)}
-.adm-login-logo{width:60px;height:60px;background:linear-gradient(135deg,var(--blue-d),var(--blue-l));border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px;box-shadow:0 8px 24px rgba(26,86,219,.3)}
+.adm-login-logo{width:60px;height:60px;background:linear-gradient(135deg,var(--blue-d),var(--blue-l));border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px;box-shadow:0 8px 24px rgba(15,140,106,.35)}
 .adm-login-wrap h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:800;color:#fff;margin-bottom:4px;letter-spacing:-.3px}
 .adm-login-wrap>p{font-size:.67rem;color:rgba(255,255,255,.45);margin-bottom:22px;text-align:center}
 .adm-fld{margin-bottom:9px;width:100%}
 .adm-fld label{display:block;font-size:.6rem;font-weight:600;color:rgba(255,255,255,.45);margin-bottom:4px;text-transform:uppercase;letter-spacing:.3px}
 .adm-fld input{width:100%;border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-sm);padding:10px 12px;font-family:'DM Sans',sans-serif;font-size:.73rem;color:#fff;background:rgba(255,255,255,.07);outline:none;-webkit-appearance:none;transition:border-color .15s}
 .adm-fld input:focus{border-color:var(--blue-l)}
-.adm-login-btn{background:var(--blue-l);color:#fff;border:none;border-radius:var(--radius);padding:12px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.8rem;font-weight:700;width:100%;cursor:pointer;margin-top:4px;box-shadow:0 4px 14px rgba(37,99,235,.3);transition:all .18s}
+.adm-login-btn{background:var(--blue-l);color:#fff;border:none;border-radius:var(--radius);padding:12px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.8rem;font-weight:700;width:100%;cursor:pointer;margin-top:4px;box-shadow:0 4px 14px rgba(15,140,106,.32);transition:all .18s}
 .adm-login-btn:active{transform:scale(.97)}
 
 /* ===== TOAST ===== */
@@ -363,8 +398,8 @@ body{
 
 /* ===== ADMIN DETAIL ===== */
 .adm-action-row{display:flex;gap:8px;padding:14px}
-.adm-acc{flex:1;background:var(--green);color:#fff;border:none;border-radius:var(--radius-sm);padding:10px;font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:600;cursor:pointer;box-shadow:0 3px 10px rgba(5,150,105,.2)}
-.adm-rej{flex:1;background:var(--surface);color:var(--red);border:1px solid rgba(220,38,38,.2);border-radius:var(--radius-sm);padding:10px;font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:600;cursor:pointer}
+.adm-acc{flex:1;background:var(--green);color:#fff;border:none;border-radius:var(--radius-sm);padding:10px;font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:600;cursor:pointer;box-shadow:0 3px 10px rgba(15,140,106,.22)}
+.adm-rej{flex:1;background:var(--surface);color:var(--red);border:1px solid rgba(192,57,43,.22);border-radius:var(--radius-sm);padding:10px;font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:600;cursor:pointer}
 
 /* ===== ADMIN WELCOME BANNER ===== */
 .adm-welcome{background:linear-gradient(145deg,var(--slate),var(--slate-m));border-radius:var(--radius-md);padding:14px;margin:12px 14px 0;display:flex;align-items:center;justify-content:space-between;box-shadow:var(--sh)}
@@ -376,8 +411,8 @@ body{
 .empty-state p{font-size:.65rem;color:var(--neutral);margin-top:4px;line-height:1.55}
 
 /* ===== RATE CARD ===== */
-.rate-card{background:linear-gradient(135deg,var(--blue-xs),#fff);border:1px solid rgba(26,86,219,.12);border-radius:var(--radius-md);padding:14px;margin:0 14px 10px;display:flex;align-items:center;gap:12px;box-shadow:var(--sh-sm)}
-.rate-badge{width:42px;height:42px;border-radius:var(--radius);background:linear-gradient(135deg,var(--blue-d),var(--blue-l));display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;box-shadow:0 4px 12px rgba(26,86,219,.2)}
+.rate-card{background:linear-gradient(135deg,var(--blue-xs),#fff);border:1px solid rgba(15,140,106,.16);border-radius:var(--radius-md);padding:14px;margin:0 14px 10px;display:flex;align-items:center;gap:12px;box-shadow:var(--sh-sm)}
+.rate-badge{width:42px;height:42px;border-radius:var(--radius);background:linear-gradient(135deg,var(--blue-d),var(--blue-l));display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;box-shadow:0 4px 12px rgba(15,140,106,.25)}
 .rate-info h4{font-family:'Plus Jakarta Sans',sans-serif;font-size:.78rem;font-weight:700;color:var(--blue-d)}
 .rate-info p{font-size:.59rem;color:var(--neutral);margin-top:2px;line-height:1.45}
 
@@ -388,6 +423,9 @@ body{
 .qa-ic{font-size:18px}
 .qa-lbl{font-size:.64rem;font-weight:600;color:var(--slate)}
 .qa-sub{font-size:.54rem;color:var(--neutral)}
+
+/* ===== RATING STARS ===== */
+.stars{color:#e0a613;font-size:.6rem;letter-spacing:1px}
 </style>
 </head>
 <body>
@@ -432,9 +470,20 @@ body{
         <div class="scrl">
           <div class="hero">
             <div class="hero-badge">⭐ 5.0 · 189 Reviews · Locally Trusted</div>
-            <h2>Expert Cleaning Services<br>On Demand</h2>
-            <p>Professional cleaning for homes, apartments, offices & more in your city</p>
+            <h2>Spotless homes,<br>booked in minutes</h2>
+            <p>Vetted, insured cleaning professionals for homes, apartments & offices in your city</p>
             <button class="hero-btn" onclick="cGoTo('c-services')">Book a Clean →</button>
+          </div>
+          <div class="promo-strip">
+            <div class="promo-card" style="background-image:url('https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=300&q=60')" onclick="cOpenBook('Villa Deep Cleaning','🏡')">
+              <div class="ptag">20% OFF</div><div class="ptxt">First-time booking discount</div>
+            </div>
+            <div class="promo-card" style="background-image:url('https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=300&q=60')" onclick="cOpenBook('Apartment Cleaning','🏠')">
+              <div class="ptag">POPULAR</div><div class="ptxt">Weekly apartment plans</div>
+            </div>
+            <div class="promo-card" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=300&q=60')" onclick="cOpenBook('Office Cleaning','🏢')">
+              <div class="ptag">NEW</div><div class="ptxt">Office packages available</div>
+            </div>
           </div>
           <div class="stats-row">
             <div class="stat"><div class="stat-n">5.0★</div><div class="stat-l">Rating</div></div>
@@ -534,15 +583,15 @@ body{
           <div class="conf-title">Booking Sent!</div>
           <div class="conf-sub">Your request has been received. Our team will confirm shortly — you'll be notified instantly.</div>
           <div class="sum-card" id="c-sum-card"></div>
-          <div style="background:var(--teal-xs);border:1px solid rgba(8,145,178,.15);border-radius:var(--radius);padding:11px 13px;margin:0 14px 10px;display:flex;align-items:center;gap:9px">
+          <div style="background:var(--teal-xs);border:1px solid rgba(194,116,11,.18);border-radius:var(--radius);padding:11px 13px;margin:0 14px 10px;display:flex;align-items:center;gap:9px">
             <span style="font-size:17px">🔔</span>
             <div style="font-size:.61rem;color:var(--teal-d);font-weight:500;line-height:1.5">You'll receive a notification when your cleaner accepts the job.</div>
           </div>
           <div style="background:var(--blue-l);border-radius:var(--radius);padding:13px;margin:0 14px 10px;text-align:center">
-            <p style="font-size:.6rem;color:rgba(255,255,255,.65);margin-bottom:2px">Call us anytime</p>
+            <p style="font-size:.6rem;color:rgba(255,255,255,.7);margin-bottom:2px">Call us anytime</p>
             <a href="tel:+12345678901" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:.92rem;font-weight:700;color:#fff;text-decoration:none;display:block">+1 234 567 8901</a>
           </div>
-          <button style="background:var(--surface);color:var(--blue-l);border:1px solid rgba(26,86,219,.25);border-radius:var(--radius);padding:11px;font-family:'DM Sans',sans-serif;font-size:.77rem;font-weight:600;width:calc(100% - 28px);margin:0 14px 14px;cursor:pointer;display:block" onclick="cGoTo('c-home')">🔄 Book Another Service</button>
+          <button style="background:var(--surface);color:var(--blue-l);border:1px solid rgba(15,140,106,.28);border-radius:var(--radius);padding:11px;font-family:'DM Sans',sans-serif;font-size:.77rem;font-weight:600;width:calc(100% - 28px);margin:0 14px 14px;cursor:pointer;display:block" onclick="cGoTo('c-home')">🔄 Book Another Service</button>
         </div>
       </div>
 
@@ -583,9 +632,9 @@ body{
       <div class="scr" id="c-profile">
         <div class="scrl">
           <div style="background:linear-gradient(145deg,var(--blue-d),var(--blue-l));padding:38px 16px 22px;display:flex;flex-direction:column;align-items:center;gap:8px">
-            <div style="width:58px;height:58px;border-radius:50%;background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;color:#fff">GU</div>
+            <img src="https://i.pravatar.cc/150?img=47" style="width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.5);box-shadow:0 4px 14px rgba(0,0,0,.2)">
             <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:.92rem;font-weight:700;color:#fff">Guest User</div>
-            <div style="font-size:.58rem;color:rgba(255,255,255,.6);background:rgba(255,255,255,.12);padding:2px 10px;border-radius:100px;border:1px solid rgba(255,255,255,.15)">CleanPro Client</div>
+            <div style="font-size:.58rem;color:rgba(255,255,255,.65);background:rgba(255,255,255,.14);padding:2px 10px;border-radius:100px;border:1px solid rgba(255,255,255,.18)">CleanPro Client</div>
           </div>
           <div class="stats-row" style="margin-top:14px">
             <div class="stat"><div class="stat-n" id="c-pstat">0</div><div class="stat-l">Bookings</div></div>
@@ -639,7 +688,7 @@ body{
       <!-- LOGIN -->
       <div class="scr active" id="k-login">
         <div class="login-wrap">
-          <div class="login-logo">🧹</div>
+          <img src="https://i.pravatar.cc/150?img=13" style="width:60px;height:60px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.55);box-shadow:0 8px 24px rgba(0,0,0,.35);margin-bottom:16px">
           <h2>Cleaner Portal</h2>
           <p>Sign in to manage your jobs and schedule</p>
           <div style="width:100%">
@@ -663,8 +712,13 @@ body{
         <div class="scrl">
           <div class="cl-hero">
             <div class="cl-hero-tag">Good morning 👋</div>
-            <h3>Alex Johnson</h3>
-            <p>Senior Cleaner · North & East District</p>
+            <div class="cl-hero-top">
+              <img class="cl-hero-avatar" src="https://i.pravatar.cc/150?img=13">
+              <div>
+                <h3 style="margin-bottom:0">Alex Johnson</h3>
+                <p>Senior Cleaner · North & East District</p>
+              </div>
+            </div>
             <div class="online-dot"><span class="dot"></span><span class="lbl">Available for jobs</span></div>
           </div>
           <div class="cl-stats">
@@ -736,7 +790,7 @@ body{
       <div class="scr" id="k-job-detail">
         <div class="cyan-back-hdr" style="padding-bottom:0"><button class="back-btn" onclick="kGoBack()">‹</button><h2>Job Details</h2></div>
         <div style="background:var(--surface);border-bottom:1px solid var(--border);padding:10px 14px 14px;flex-shrink:0">
-          <div style="background:var(--teal-xs);border:1px solid rgba(8,145,178,.12);border-radius:var(--radius);padding:11px 13px;display:flex;align-items:center;gap:10px">
+          <div style="background:var(--teal-xs);border:1px solid rgba(194,116,11,.16);border-radius:var(--radius);padding:11px 13px;display:flex;align-items:center;gap:10px">
             <div id="kdet-em" style="font-size:22px">🏡</div>
             <div><h3 id="kdet-name" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:.85rem;font-weight:700;color:var(--teal-d)">Service</h3><p id="kdet-sub" style="font-size:.58rem;color:var(--neutral);margin-top:2px">Details</p></div>
           </div>
@@ -759,9 +813,9 @@ body{
       <div class="scr" id="k-profile">
         <div class="scrl">
           <div style="background:linear-gradient(145deg,var(--teal-d),var(--teal-l));padding:38px 16px 22px;display:flex;flex-direction:column;align-items:center;gap:8px">
-            <div style="width:58px;height:58px;border-radius:50%;background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;color:#fff">AJ</div>
+            <img src="https://i.pravatar.cc/150?img=13" style="width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.5);box-shadow:0 4px 14px rgba(0,0,0,.2)">
             <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:.9rem;font-weight:700;color:#fff">Alex Johnson</div>
-            <div style="font-size:.56rem;color:rgba(255,255,255,.65);background:rgba(255,255,255,.12);padding:2px 10px;border-radius:100px;border:1px solid rgba(255,255,255,.15)">Senior Cleaner · ID #CP-007</div>
+            <div style="font-size:.56rem;color:rgba(255,255,255,.7);background:rgba(255,255,255,.14);padding:2px 10px;border-radius:100px;border:1px solid rgba(255,255,255,.18)">Senior Cleaner · ID #CP-007</div>
           </div>
           <div class="cl-stats" style="margin-top:14px">
             <div class="cl-stat"><div class="n">5.0★</div><div class="l">Rating</div></div>
@@ -773,7 +827,7 @@ body{
             <div class="pmenu-item"><div class="pmenu-ic" style="background:var(--teal-xs)">📅</div><div class="pmenu-tx">Mon–Sat, 8:00am – 6:00pm</div></div>
             <div class="pmenu-item"><div class="pmenu-ic" style="background:var(--teal-xs)">🧹</div><div class="pmenu-tx">Deep, AC Duct, Office Cleaning</div></div>
             <div class="pmenu-item"><div class="pmenu-ic" style="background:var(--teal-xs)">💳</div><div class="pmenu-tx">Bank Account ····4421</div></div>
-            <div style="margin-top:6px"><button style="width:100%;background:var(--surface);color:var(--red);border:1px solid rgba(220,38,38,.18);border-radius:var(--radius);padding:11px;font-family:'DM Sans',sans-serif;font-size:.74rem;font-weight:600;cursor:pointer" onclick="kLogout()">🚪 Sign Out</button></div>
+            <div style="margin-top:6px"><button style="width:100%;background:var(--surface);color:var(--red);border:1px solid rgba(192,57,43,.2);border-radius:var(--radius);padding:11px;font-family:'DM Sans',sans-serif;font-size:.74rem;font-weight:600;cursor:pointer" onclick="kLogout()">🚪 Sign Out</button></div>
           </div>
         </div>
         <div class="bot-nav teal-nav">
@@ -844,8 +898,8 @@ body{
           <div class="sec-title" style="padding:0 14px;margin:14px 0 8px">Recent Bookings</div>
           <div id="a-recent-bk"><div style="padding:5px 14px 12px;font-size:.66rem;color:var(--neutral)">No bookings yet. They appear when clients book.</div></div>
           <div class="sec-title" style="padding:0 14px;margin:12px 0 8px">Our Team</div>
-          <div class="adm-cleaner-row"><div class="adm-av">AJ</div><div class="adm-cl-info"><h4>Alex Johnson</h4><p>Senior Cleaner · North & East</p></div><span class="online-badge on">Online</span></div>
-          <div class="adm-cleaner-row"><div class="adm-av" style="background:linear-gradient(135deg,var(--teal-d),var(--teal-l))">SR</div><div class="adm-cl-info"><h4>Sam Rivera</h4><p>Specialist · West & Central</p></div><span class="online-badge on">Online</span></div>
+          <div class="adm-cleaner-row"><img class="adm-av" src="https://i.pravatar.cc/150?img=13"><div class="adm-cl-info"><h4>Alex Johnson</h4><p>Senior Cleaner · North & East</p></div><span class="online-badge on">Online</span></div>
+          <div class="adm-cleaner-row"><img class="adm-av" src="https://i.pravatar.cc/150?img=32"><div class="adm-cl-info"><h4>Sam Rivera</h4><p>Specialist · West & Central</p></div><span class="online-badge on">Online</span></div>
           <div class="adm-cleaner-row"><div class="adm-av" style="background:linear-gradient(135deg,#7c3aed,#a78bfa)">CP</div><div class="adm-cl-info"><h4>Chen & Patel Team</h4><p>Deep Clean Team · Southside</p></div><span class="online-badge off">Offline</span></div>
           <div style="height:14px"></div>
         </div>
@@ -911,11 +965,11 @@ body{
         <div class="dark-hdr"><div class="hdr-wordmark">Admin <span>Panel</span></div></div>
         <div class="scrl">
           <div style="padding:14px 14px 6px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.82rem;font-weight:700;color:var(--slate);letter-spacing:-.2px">Our Team (30+)</div>
-          <div class="adm-cleaner-row" style="cursor:pointer"><div class="adm-av">AJ</div><div class="adm-cl-info"><h4>Alex Johnson</h4><p>Senior Cleaner · 5.0★ · 24 jobs done</p></div><span class="online-badge on">Online</span></div>
-          <div class="adm-cleaner-row" style="cursor:pointer"><div class="adm-av" style="background:linear-gradient(135deg,var(--teal-d),var(--teal-l))">SR</div><div class="adm-cl-info"><h4>Sam Rivera</h4><p>Specialist · 5.0★ · 31 jobs done</p></div><span class="online-badge on">Online</span></div>
+          <div class="adm-cleaner-row" style="cursor:pointer"><img class="adm-av" src="https://i.pravatar.cc/150?img=13"><div class="adm-cl-info"><h4>Alex Johnson</h4><p>Senior Cleaner · 5.0★ · 24 jobs done</p></div><span class="online-badge on">Online</span></div>
+          <div class="adm-cleaner-row" style="cursor:pointer"><img class="adm-av" src="https://i.pravatar.cc/150?img=32"><div class="adm-cl-info"><h4>Sam Rivera</h4><p>Specialist · 5.0★ · 31 jobs done</p></div><span class="online-badge on">Online</span></div>
           <div class="adm-cleaner-row" style="cursor:pointer"><div class="adm-av" style="background:linear-gradient(135deg,#7c3aed,#a78bfa)">CP</div><div class="adm-cl-info"><h4>Chen & Patel Team</h4><p>Deep Clean Team · 5.0★ · 18 jobs</p></div><span class="online-badge off">Offline</span></div>
-          <div class="adm-cleaner-row" style="cursor:pointer"><div class="adm-av" style="background:linear-gradient(135deg,#0277bd,#29b6f6)">MS</div><div class="adm-cl-info"><h4>Maria Santos</h4><p>Office Specialist · 5.0★ · 15 jobs</p></div><span class="online-badge on">Online</span></div>
-          <div class="adm-cleaner-row" style="cursor:pointer"><div class="adm-av" style="background:linear-gradient(135deg,#b45309,#f59e0b)">JW</div><div class="adm-cl-info"><h4>James Walker</h4><p>AC Duct Expert · 4.9★ · 22 jobs</p></div><span class="online-badge off">Offline</span></div>
+          <div class="adm-cleaner-row" style="cursor:pointer"><img class="adm-av" src="https://i.pravatar.cc/150?img=44"><div class="adm-cl-info"><h4>Maria Santos</h4><p>Office Specialist · 5.0★ · 15 jobs</p></div><span class="online-badge on">Online</span></div>
+          <div class="adm-cleaner-row" style="cursor:pointer"><img class="adm-av" src="https://i.pravatar.cc/150?img=51"><div class="adm-cl-info"><h4>James Walker</h4><p>AC Duct Expert · 4.9★ · 22 jobs</p></div><span class="online-badge off">Offline</span></div>
           <div style="height:14px"></div>
         </div>
         <div class="bot-nav dark-bot-nav">
@@ -938,7 +992,7 @@ body{
             <div class="pmenu-item"><div class="pmenu-ic" style="background:var(--teal-xs)">📍</div><div class="pmenu-tx">Service Zones</div><div class="pmenu-ar">›</div></div>
             <div class="pmenu-item"><div class="pmenu-ic" style="background:var(--blue-xs)">🌐</div><div class="pmenu-tx">Website Integration</div><div class="pmenu-ar">›</div></div>
             <div class="pmenu-item"><div class="pmenu-ic" style="background:var(--green-xs)">💬</div><div class="pmenu-tx">WhatsApp Integration</div><div class="pmenu-ar">›</div></div>
-            <div style="margin-top:6px"><button style="width:100%;background:var(--surface);color:var(--red);border:1px solid rgba(220,38,38,.18);border-radius:var(--radius);padding:11px;font-family:'DM Sans',sans-serif;font-size:.74rem;font-weight:600;cursor:pointer" onclick="aLogout()">🚪 Sign Out</button></div>
+            <div style="margin-top:6px"><button style="width:100%;background:var(--surface);color:var(--red);border:1px solid rgba(192,57,43,.2);border-radius:var(--radius);padding:11px;font-family:'DM Sans',sans-serif;font-size:.74rem;font-weight:600;cursor:pointer" onclick="aLogout()">🚪 Sign Out</button></div>
           </div>
           <div style="height:14px"></div>
         </div>
@@ -1281,7 +1335,7 @@ function renderKJobs() {
   }
   el.innerHTML = jobs.map(function(j){
     var stPill = j.status === 'accepted' ? '<span class="pill pill-acc">Accepted</span>' : j.status === 'rejected' ? '<span class="pill pill-rej">Declined</span>' : '<span class="pill pill-new">New</span>';
-    return '<div class="job-card clickable" onclick="kOpenJobDetail(' + j.id + ')" style="' + (j.status === 'pending' ? 'border-color:rgba(8,145,178,.2);background:var(--teal-xs)' : '') + '"><div class="job-top"><div class="job-ic">' + j.emoji + '</div><div class="job-info"><h4>' + j.service + '</h4><p>' + j.freq + ' · ' + j.name + '</p></div>' + stPill + '</div><div class="job-meta"><div class="job-meta-item"><div class="lbl">Date</div><div class="val">' + (j.date ? fmtDate(j.date) : 'TBC') + '</div></div><div class="job-meta-item"><div class="lbl">Address</div><div class="val">' + j.addr.substring(0, 22) + '</div></div></div><div class="tap-hint">Tap for full details' + (j.status === 'pending' ? ' & actions' : '') + '</div></div>';
+    return '<div class="job-card clickable" onclick="kOpenJobDetail(' + j.id + ')" style="' + (j.status === 'pending' ? 'border-color:rgba(194,116,11,.25);background:var(--teal-xs)' : '') + '"><div class="job-top"><div class="job-ic">' + j.emoji + '</div><div class="job-info"><h4>' + j.service + '</h4><p>' + j.freq + ' · ' + j.name + '</p></div>' + stPill + '</div><div class="job-meta"><div class="job-meta-item"><div class="lbl">Date</div><div class="val">' + (j.date ? fmtDate(j.date) : 'TBC') + '</div></div><div class="job-meta-item"><div class="lbl">Address</div><div class="val">' + j.addr.substring(0, 22) + '</div></div></div><div class="tap-hint">Tap for full details' + (j.status === 'pending' ? ' & actions' : '') + '</div></div>';
   }).join('');
 }
 
@@ -1314,11 +1368,11 @@ function kOpenJobDetail(jobId) {
 
   var sr = document.getElementById('kdet-status-row');
   if (j.status === 'accepted') {
-    sr.innerHTML = '<div style="background:var(--green-xs);border:1px solid rgba(5,150,105,.15);border-radius:var(--radius);padding:10px 13px;margin:12px 14px 0;display:flex;align-items:center;gap:8px"><span style="font-size:17px">✅</span><div><div style="font-size:.67rem;font-weight:600;color:var(--green)">You accepted this job</div><div style="font-size:.57rem;color:var(--neutral);margin-top:1px">Client has been notified</div></div></div>';
+    sr.innerHTML = '<div style="background:var(--green-xs);border:1px solid rgba(15,140,106,.18);border-radius:var(--radius);padding:10px 13px;margin:12px 14px 0;display:flex;align-items:center;gap:8px"><span style="font-size:17px">✅</span><div><div style="font-size:.67rem;font-weight:600;color:var(--green)">You accepted this job</div><div style="font-size:.57rem;color:var(--neutral);margin-top:1px">Client has been notified</div></div></div>';
   } else if (j.status === 'rejected') {
-    sr.innerHTML = '<div style="background:var(--red-xs);border:1px solid rgba(220,38,38,.12);border-radius:var(--radius);padding:10px 13px;margin:12px 14px 0;display:flex;align-items:center;gap:8px"><span style="font-size:17px">❌</span><div><div style="font-size:.67rem;font-weight:600;color:var(--red)">You declined this job</div><div style="font-size:.57rem;color:var(--neutral);margin-top:1px">Client has been notified</div></div></div>';
+    sr.innerHTML = '<div style="background:var(--red-xs);border:1px solid rgba(192,57,43,.14);border-radius:var(--radius);padding:10px 13px;margin:12px 14px 0;display:flex;align-items:center;gap:8px"><span style="font-size:17px">❌</span><div><div style="font-size:.67rem;font-weight:600;color:var(--red)">You declined this job</div><div style="font-size:.57rem;color:var(--neutral);margin-top:1px">Client has been notified</div></div></div>';
   } else {
-    sr.innerHTML = '<div style="background:var(--amber-l);border:1px solid rgba(217,119,6,.15);border-radius:var(--radius);padding:10px 13px;margin:12px 14px 0;display:flex;align-items:center;gap:8px"><span style="font-size:17px">⏳</span><div><div style="font-size:.67rem;font-weight:600;color:var(--amber)">Awaiting your response</div><div style="font-size:.57rem;color:var(--neutral);margin-top:1px">Accept or decline below</div></div></div>';
+    sr.innerHTML = '<div style="background:var(--amber-l);border:1px solid rgba(194,116,11,.2);border-radius:var(--radius);padding:10px 13px;margin:12px 14px 0;display:flex;align-items:center;gap:8px"><span style="font-size:17px">⏳</span><div><div style="font-size:.67rem;font-weight:600;color:var(--amber)">Awaiting your response</div><div style="font-size:.57rem;color:var(--neutral);margin-top:1px">Accept or decline below</div></div></div>';
   }
   document.getElementById('kdet-info').innerHTML =
     mkKRow('Date', (j.date ? fmtDate(j.date) : 'TBC')) +
@@ -1334,7 +1388,7 @@ function kOpenJobDetail(jobId) {
   if (j.status === 'pending') {
     act.innerHTML = '<div style="font-size:.6rem;font-weight:600;color:var(--neutral);text-transform:uppercase;letter-spacing:.5px;margin-bottom:9px;display:flex;align-items:center;gap:6px"><span style="display:block;width:3px;height:11px;background:var(--teal-l);border-radius:2px"></span>Your Decision</div><div style="display:flex;gap:9px"><button class="acc-btn" style="font-size:.76rem;padding:12px" onclick="kAccept(' + j.id + ')">✓ Accept Job</button><button class="rej-btn" style="font-size:.76rem;padding:12px" onclick="kReject(' + j.id + ')">✗ Decline</button></div><div style="font-size:.58rem;color:var(--neutral-l);text-align:center;margin-top:8px">Client is notified immediately once accepted.</div>';
   } else {
-    act.innerHTML = '<button style="width:100%;background:var(--teal-xs);border:1px solid rgba(8,145,178,.15);border-radius:var(--radius-sm);padding:11px;font-family:\'DM Sans\',sans-serif;font-size:.72rem;font-weight:500;color:var(--teal-d);cursor:pointer" onclick="kGoBack()">← Back to Jobs</button>';
+    act.innerHTML = '<button style="width:100%;background:var(--teal-xs);border:1px solid rgba(194,116,11,.18);border-radius:var(--radius-sm);padding:11px;font-family:\'DM Sans\',sans-serif;font-size:.72rem;font-weight:500;color:var(--teal-d);cursor:pointer" onclick="kGoBack()">← Back to Jobs</button>';
   }
   kGoTo('k-job-detail');
 }
@@ -1349,8 +1403,8 @@ function kAccept(jobId) {
   renderKDash();
   renderKJobs();
 
-  document.getElementById('kdet-status-row').innerHTML = '<div style="background:var(--green-xs);border:1px solid rgba(5,150,105,.15);border-radius:var(--radius);padding:10px 13px;margin:12px 14px 0;display:flex;align-items:center;gap:8px"><span style="font-size:17px">✅</span><div><div style="font-size:.67rem;font-weight:600;color:var(--green)">You accepted this job</div><div style="font-size:.57rem;color:var(--neutral);margin-top:1px">Client has been notified</div></div></div>';
-  document.getElementById('kdet-actions').innerHTML = '<div style="background:var(--green-xs);border:1px solid rgba(5,150,105,.12);border-radius:var(--radius-sm);padding:11px 13px;text-align:center;font-size:.68rem;font-weight:600;color:var(--green)">✅ Job accepted successfully!</div><button style="width:100%;background:var(--teal-xs);border:1px solid rgba(8,145,178,.15);border-radius:var(--radius-sm);padding:11px;font-family:\'DM Sans\',sans-serif;font-size:.72rem;font-weight:500;color:var(--teal-d);cursor:pointer;margin-top:8px" onclick="kGoBack()">← Back to Jobs</button>';
+  document.getElementById('kdet-status-row').innerHTML = '<div style="background:var(--green-xs);border:1px solid rgba(15,140,106,.18);border-radius:var(--radius);padding:10px 13px;margin:12px 14px 0;display:flex;align-items:center;gap:8px"><span style="font-size:17px">✅</span><div><div style="font-size:.67rem;font-weight:600;color:var(--green)">You accepted this job</div><div style="font-size:.57rem;color:var(--neutral);margin-top:1px">Client has been notified</div></div></div>';
+  document.getElementById('kdet-actions').innerHTML = '<div style="background:var(--green-xs);border:1px solid rgba(15,140,106,.15);border-radius:var(--radius-sm);padding:11px 13px;text-align:center;font-size:.68rem;font-weight:600;color:var(--green)">✅ Job accepted successfully!</div><button style="width:100%;background:var(--teal-xs);border:1px solid rgba(194,116,11,.18);border-radius:var(--radius-sm);padding:11px;font-family:\'DM Sans\',sans-serif;font-size:.72rem;font-weight:500;color:var(--teal-d);cursor:pointer;margin-top:8px" onclick="kGoBack()">← Back to Jobs</button>';
 
   cNotifs.unshift({ type: 'accepted', title: 'Cleaner Assigned!', msg: 'Alex Johnson confirmed your ' + j.service + ' on ' + (j.date ? fmtDate(j.date) : 'the scheduled date') + '.', time: 'Just now', jobId: j.id, read: false });
   cNotifCount++;
@@ -1378,8 +1432,8 @@ function kReject(jobId) {
   renderKDash();
   renderKJobs();
 
-  document.getElementById('kdet-status-row').innerHTML = '<div style="background:var(--red-xs);border:1px solid rgba(220,38,38,.12);border-radius:var(--radius);padding:10px 13px;margin:12px 14px 0;display:flex;align-items:center;gap:8px"><span style="font-size:17px">❌</span><div><div style="font-size:.67rem;font-weight:600;color:var(--red)">You declined this job</div><div style="font-size:.57rem;color:var(--neutral);margin-top:1px">Client has been notified</div></div></div>';
-  document.getElementById('kdet-actions').innerHTML = '<div style="background:var(--red-xs);border:1px solid rgba(220,38,38,.1);border-radius:var(--radius-sm);padding:11px 13px;text-align:center;font-size:.68rem;font-weight:600;color:var(--red)">Job declined.</div><button style="width:100%;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:11px;font-family:\'DM Sans\',sans-serif;font-size:.72rem;font-weight:500;color:var(--neutral);cursor:pointer;margin-top:8px" onclick="kGoBack()">← Back to Jobs</button>';
+  document.getElementById('kdet-status-row').innerHTML = '<div style="background:var(--red-xs);border:1px solid rgba(192,57,43,.14);border-radius:var(--radius);padding:10px 13px;margin:12px 14px 0;display:flex;align-items:center;gap:8px"><span style="font-size:17px">❌</span><div><div style="font-size:.67rem;font-weight:600;color:var(--red)">You declined this job</div><div style="font-size:.57rem;color:var(--neutral);margin-top:1px">Client has been notified</div></div></div>';
+  document.getElementById('kdet-actions').innerHTML = '<div style="background:var(--red-xs);border:1px solid rgba(192,57,43,.12);border-radius:var(--radius-sm);padding:11px 13px;text-align:center;font-size:.68rem;font-weight:600;color:var(--red)">Job declined.</div><button style="width:100%;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:11px;font-family:\'DM Sans\',sans-serif;font-size:.72rem;font-weight:500;color:var(--neutral);cursor:pointer;margin-top:8px" onclick="kGoBack()">← Back to Jobs</button>';
 
   cNotifs.unshift({ type: 'rejected', title: 'Finding Another Cleaner', msg: 'Your ' + j.service + ' has been passed to another cleaner.', time: 'Just now', jobId: j.id, read: false });
   cNotifCount++;
@@ -1497,7 +1551,7 @@ function aOpenDetail(jobId) {
 
   var sr = document.getElementById('adet-status-row');
   var stBg = j.status === 'accepted' ? 'var(--green-xs)' : j.status === 'rejected' ? 'var(--red-xs)' : 'var(--amber-l)';
-  var stBd = j.status === 'accepted' ? 'rgba(5,150,105,.15)' : j.status === 'rejected' ? 'rgba(220,38,38,.12)' : 'rgba(217,119,6,.15)';
+  var stBd = j.status === 'accepted' ? 'rgba(15,140,106,.18)' : j.status === 'rejected' ? 'rgba(192,57,43,.14)' : 'rgba(194,116,11,.2)';
   var stIc = j.status === 'accepted' ? '✅' : j.status === 'rejected' ? '❌' : '⏳';
   var stClr = j.status === 'accepted' ? 'var(--green)' : j.status === 'rejected' ? 'var(--red)' : 'var(--amber)';
   var stTxt = j.status === 'accepted' ? 'Accepted by ' + (j.cleaner || 'Alex Johnson') : j.status === 'rejected' ? 'Declined — Needs Reassignment' : 'Pending · Awaiting cleaner response';
@@ -1516,14 +1570,14 @@ function aOpenDetail(jobId) {
   if (j.status === 'accepted') {
     assignEl.innerHTML = '<div style="font-size:.69rem;font-weight:600;color:var(--green)">✅ ' + (j.cleaner || 'Alex Johnson') + ' (#CP-007)</div><div style="font-size:.59rem;color:var(--neutral);margin-top:3px">5.0★ · Confirmed</div>';
   } else {
-    assignEl.innerHTML = '<div style="font-size:.66rem;color:var(--neutral);margin-bottom:9px">Select a cleaner to assign:</div><div style="display:flex;flex-direction:column;gap:6px"><button onclick="aAssign(' + j.id + ',\'Alex Johnson\')" style="background:var(--blue-xs);border:1px solid rgba(26,86,219,.15);border-radius:var(--radius-sm);padding:8px 11px;font-family:\'DM Sans\',sans-serif;font-size:.65rem;font-weight:500;color:var(--slate);cursor:pointer;text-align:left">AJ · Alex Johnson — Online ✓</button><button onclick="aAssign(' + j.id + ',\'Sam Rivera\')" style="background:var(--teal-xs);border:1px solid rgba(8,145,178,.12);border-radius:var(--radius-sm);padding:8px 11px;font-family:\'DM Sans\',sans-serif;font-size:.65rem;font-weight:500;color:var(--slate);cursor:pointer;text-align:left">SR · Sam Rivera — Online ✓</button></div>';
+    assignEl.innerHTML = '<div style="font-size:.66rem;color:var(--neutral);margin-bottom:9px">Select a cleaner to assign:</div><div style="display:flex;flex-direction:column;gap:6px"><button onclick="aAssign(' + j.id + ',\'Alex Johnson\')" style="background:var(--blue-xs);border:1px solid rgba(15,140,106,.16);border-radius:var(--radius-sm);padding:8px 11px;font-family:\'DM Sans\',sans-serif;font-size:.65rem;font-weight:500;color:var(--slate);cursor:pointer;text-align:left">AJ · Alex Johnson — Online ✓</button><button onclick="aAssign(' + j.id + ',\'Sam Rivera\')" style="background:var(--teal-xs);border:1px solid rgba(194,116,11,.16);border-radius:var(--radius-sm);padding:8px 11px;font-family:\'DM Sans\',sans-serif;font-size:.65rem;font-weight:500;color:var(--slate);cursor:pointer;text-align:left">SR · Sam Rivera — Online ✓</button></div>';
   }
 
   var act = document.getElementById('adet-actions');
   if (j.status === 'pending') {
     act.innerHTML = '<div style="display:flex;gap:8px"><button class="adm-acc" onclick="aAccept(' + j.id + ')">✓ Approve Booking</button><button class="adm-rej" onclick="aReject(' + j.id + ')">✗ Decline</button></div>';
   } else {
-    act.innerHTML = '<button style="width:100%;background:var(--blue-xs);border:1px solid rgba(26,86,219,.12);border-radius:var(--radius-sm);padding:11px;font-family:\'DM Sans\',sans-serif;font-size:.72rem;font-weight:500;color:var(--blue-l);cursor:pointer" onclick="aGoBack()">← Back to Bookings</button>';
+    act.innerHTML = '<button style="width:100%;background:var(--blue-xs);border:1px solid rgba(15,140,106,.16);border-radius:var(--radius-sm);padding:11px;font-family:\'DM Sans\',sans-serif;font-size:.72rem;font-weight:500;color:var(--blue-l);cursor:pointer" onclick="aGoBack()">← Back to Bookings</button>';
   }
   aGoTo('a-bk-detail');
 }
@@ -1543,8 +1597,8 @@ function aAccept(jobId) {
   renderADash();
   renderABookings();
 
-  document.getElementById('adet-actions').innerHTML = '<div style="background:var(--green-xs);border:1px solid rgba(5,150,105,.12);border-radius:var(--radius-sm);padding:11px 13px;text-align:center;font-size:.68rem;font-weight:600;color:var(--green)">✅ Booking approved!</div><button style="width:100%;background:var(--blue-xs);border:1px solid rgba(26,86,219,.12);border-radius:var(--radius-sm);padding:11px;font-family:\'DM Sans\',sans-serif;font-size:.72rem;font-weight:500;color:var(--blue-l);cursor:pointer;margin-top:8px" onclick="aGoBack()">← Back to Bookings</button>';
-  document.getElementById('adet-status-row').innerHTML = '<div style="background:var(--green-xs);border:1px solid rgba(5,150,105,.15);border-radius:var(--radius);padding:10px 13px;margin:12px 14px 0;display:flex;align-items:center;gap:8px"><span style="font-size:17px">✅</span><div style="font-size:.66rem;font-weight:600;color:var(--green)">Approved by Admin · Assigned to ' + j.cleaner + '</div></div>';
+  document.getElementById('adet-actions').innerHTML = '<div style="background:var(--green-xs);border:1px solid rgba(15,140,106,.15);border-radius:var(--radius-sm);padding:11px 13px;text-align:center;font-size:.68rem;font-weight:600;color:var(--green)">✅ Booking approved!</div><button style="width:100%;background:var(--blue-xs);border:1px solid rgba(15,140,106,.16);border-radius:var(--radius-sm);padding:11px;font-family:\'DM Sans\',sans-serif;font-size:.72rem;font-weight:500;color:var(--blue-l);cursor:pointer;margin-top:8px" onclick="aGoBack()">← Back to Bookings</button>';
+  document.getElementById('adet-status-row').innerHTML = '<div style="background:var(--green-xs);border:1px solid rgba(15,140,106,.18);border-radius:var(--radius);padding:10px 13px;margin:12px 14px 0;display:flex;align-items:center;gap:8px"><span style="font-size:17px">✅</span><div style="font-size:.66rem;font-weight:600;color:var(--green)">Approved by Admin · Assigned to ' + j.cleaner + '</div></div>';
   document.getElementById('adet-assign').innerHTML = '<div style="font-size:.69rem;font-weight:600;color:var(--green)">✅ ' + j.cleaner + ' confirmed</div><div style="font-size:.59rem;color:var(--neutral);margin-top:3px">Cleaner notified · 5.0★</div>';
 
   cNotifs.unshift({ type: 'accepted', title: 'Booking Confirmed!', msg: 'Your ' + j.service + ' has been confirmed. We look forward to serving you.', time: 'Just now', jobId: j.id, read: false });
@@ -1572,8 +1626,8 @@ function aReject(jobId) {
   renderADash();
   renderABookings();
 
-  document.getElementById('adet-actions').innerHTML = '<div style="background:var(--red-xs);border:1px solid rgba(220,38,38,.1);border-radius:var(--radius-sm);padding:11px 13px;text-align:center;font-size:.68rem;font-weight:600;color:var(--red)">Booking declined.</div><button style="width:100%;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:11px;font-family:\'DM Sans\',sans-serif;font-size:.72rem;font-weight:500;color:var(--neutral);cursor:pointer;margin-top:8px" onclick="aGoBack()">← Back to Bookings</button>';
-  document.getElementById('adet-status-row').innerHTML = '<div style="background:var(--red-xs);border:1px solid rgba(220,38,38,.12);border-radius:var(--radius);padding:10px 13px;margin:12px 14px 0;display:flex;align-items:center;gap:8px"><span style="font-size:17px">❌</span><div style="font-size:.66rem;font-weight:600;color:var(--red)">Declined by Admin</div></div>';
+  document.getElementById('adet-actions').innerHTML = '<div style="background:var(--red-xs);border:1px solid rgba(192,57,43,.12);border-radius:var(--radius-sm);padding:11px 13px;text-align:center;font-size:.68rem;font-weight:600;color:var(--red)">Booking declined.</div><button style="width:100%;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:11px;font-family:\'DM Sans\',sans-serif;font-size:.72rem;font-weight:500;color:var(--neutral);cursor:pointer;margin-top:8px" onclick="aGoBack()">← Back to Bookings</button>';
+  document.getElementById('adet-status-row').innerHTML = '<div style="background:var(--red-xs);border:1px solid rgba(192,57,43,.14);border-radius:var(--radius);padding:10px 13px;margin:12px 14px 0;display:flex;align-items:center;gap:8px"><span style="font-size:17px">❌</span><div style="font-size:.66rem;font-weight:600;color:var(--red)">Declined by Admin</div></div>';
 
   cNotifs.unshift({ type: 'rejected', title: 'Booking Declined', msg: 'Unfortunately we cannot fulfill your ' + j.service + ' at this time. Please contact us.', time: 'Just now', jobId: j.id, read: false });
   cNotifCount++;
