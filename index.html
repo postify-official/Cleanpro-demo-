@@ -198,6 +198,51 @@ body{
 .conf-btn{background:var(--blue-l);color:#fff;border:none;border-radius:var(--radius);padding:13px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.8rem;font-weight:700;width:calc(100% - 28px);margin:14px;cursor:pointer;box-shadow:0 4px 14px rgba(22,163,126,.32);transition:all .18s;display:flex;align-items:center;justify-content:center;gap:7px;letter-spacing:-.1px}
 .conf-btn:active{transform:scale(.97)}
 
+/* ===== SERVICE DETAIL / BOOKING SCREEN ===== */
+.svc-hero-wrap{position:relative;height:260px;flex-shrink:0;overflow:hidden;background-size:cover;background-position:center;background-color:var(--bg-d)}
+.svc-hero-icons{position:absolute;top:14px;left:14px;right:14px;display:flex;justify-content:space-between;z-index:5}
+.svc-hero-icons-right{display:flex;gap:8px}
+.svc-hero-btn{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);border:none;display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--slate);cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.16);transition:transform .15s}
+.svc-hero-btn:active{transform:scale(.9)}
+.svc-hero-btn.liked{color:#e11d48}
+.svc-detail-card{background:var(--surface);border-radius:22px 22px 0 0;margin-top:-20px;position:relative;z-index:2;padding:18px 16px 6px;box-shadow:0 -6px 18px rgba(20,25,18,.05)}
+.svc-d-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.12rem;font-weight:800;color:var(--slate);letter-spacing:-.3px}
+.svc-d-rating{display:flex;align-items:center;gap:5px;margin-top:6px;font-size:.68rem;color:var(--neutral)}
+.svc-d-rating b{color:var(--slate);font-weight:700}
+.svc-d-facts{display:flex;gap:13px;margin-top:11px;flex-wrap:wrap}
+.svc-d-fact{display:flex;align-items:center;gap:5px;font-size:.6rem;color:var(--neutral);font-weight:500;white-space:nowrap}
+.svc-d-desc{font-size:.67rem;color:var(--neutral);line-height:1.65;margin-top:12px}
+.svc-d-sec-h{font-family:'Plus Jakarta Sans',sans-serif;font-size:.8rem;font-weight:700;color:var(--slate);margin-top:17px;margin-bottom:10px;letter-spacing:-.1px}
+.svc-incl-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:5px}
+.svc-incl-item{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}
+.svc-incl-ic{width:42px;height:42px;border-radius:50%;background:var(--blue-xs);border:1px solid rgba(15,140,106,.14);display:flex;align-items:center;justify-content:center;font-size:16px}
+.svc-incl-lbl{font-size:.48rem;color:var(--neutral);font-weight:500;line-height:1.3}
+.pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+.pkg-card{border:1.5px solid var(--border);border-radius:var(--radius);padding:10px 8px;cursor:pointer;position:relative;transition:all .15s;background:var(--surface)}
+.pkg-card.active{border-color:var(--blue-l);background:var(--blue-xs)}
+.pkg-name{font-size:.62rem;font-weight:600;color:var(--slate)}
+.pkg-price{font-size:.72rem;font-weight:700;color:var(--slate);margin-top:4px}
+.pkg-price span{font-size:.53rem;font-weight:500;color:var(--neutral)}
+.pkg-check{position:absolute;top:6px;right:6px;width:15px;height:15px;border-radius:50%;background:var(--blue-l);color:#fff;display:none;align-items:center;justify-content:center;font-size:9px}
+.pkg-card.active .pkg-check{display:flex}
+.svc-sched-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.svc-book-btn{background:var(--blue-l);color:#fff;border:none;border-radius:100px;padding:14px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.8rem;font-weight:700;width:100%;margin:18px 0 4px;cursor:pointer;box-shadow:0 8px 20px rgba(22,163,126,.35);transition:all .18s;display:flex;align-items:center;justify-content:center;gap:8px}
+.svc-book-btn:active{transform:scale(.97)}
+
+/* ===== SHARE SHEET ===== */
+.share-sheet-backdrop{position:absolute;inset:0;background:rgba(10,15,12,.4);z-index:499;opacity:0;pointer-events:none;transition:opacity .2s}
+.share-sheet-backdrop.show{opacity:1;pointer-events:all}
+.share-sheet{position:absolute;left:0;right:0;bottom:0;background:var(--surface);border-radius:22px 22px 0 0;padding:10px 16px 20px;z-index:500;box-shadow:0 -8px 30px rgba(0,0,0,.18);transform:translateY(100%);transition:transform .28s cubic-bezier(.4,0,.2,1)}
+.share-sheet.show{transform:translateY(0)}
+.share-sheet-handle{width:36px;height:4px;background:var(--border);border-radius:100px;margin:0 auto 12px}
+.share-sheet-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:.85rem;font-weight:700;color:var(--slate);margin-bottom:10px}
+.share-sheet-link{background:var(--bg-d);border:1px solid var(--border);border-radius:var(--radius-sm);padding:9px 11px;font-size:.63rem;color:var(--neutral);margin-bottom:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.share-sheet-row{width:100%;display:flex;align-items:center;gap:11px;background:none;border:none;border-bottom:1px solid var(--border-l);padding:12px 2px;font-family:'DM Sans',sans-serif;font-size:.75rem;font-weight:500;color:var(--slate);cursor:pointer;text-align:left}
+.share-sheet-row:last-of-type{border-bottom:none}
+.share-sheet-row:active{background:var(--bg-d)}
+.share-sheet-ic{font-size:17px;width:22px;text-align:center}
+.share-sheet-cancel{width:100%;background:var(--bg-d);border:1px solid var(--border);border-radius:var(--radius-sm);padding:11px;font-family:'DM Sans',sans-serif;font-size:.73rem;font-weight:600;color:var(--neutral);cursor:pointer;margin-top:10px}
+
 /* ===== CONFIRMED ===== */
 .check-wrap{width:68px;height:68px;background:linear-gradient(135deg,var(--blue-d),var(--blue-l));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:20px auto 12px;box-shadow:0 8px 24px rgba(15,140,106,.3)}
 .check-ico{font-size:26px;color:#fff}
@@ -456,6 +501,17 @@ body{
         <button class="toast-x" onclick="document.getElementById('c-toast').classList.remove('show')">✕</button>
       </div>
 
+      <div class="share-sheet-backdrop" id="c-share-backdrop" onclick="cCloseShare()"></div>
+      <div class="share-sheet" id="c-share-sheet">
+        <div class="share-sheet-handle"></div>
+        <div class="share-sheet-title">Share this service</div>
+        <div class="share-sheet-link" id="c-share-link">https://cleanpro.app/service/...</div>
+        <button class="share-sheet-row" onclick="cCopyLink()"><span class="share-sheet-ic">📋</span><span>Copy Link</span></button>
+        <button class="share-sheet-row" onclick="cShareVia('WhatsApp')"><span class="share-sheet-ic">💬</span><span>Share via WhatsApp</span></button>
+        <button class="share-sheet-row" onclick="cShareVia('Email')"><span class="share-sheet-ic">✉️</span><span>Share via Email</span></button>
+        <button class="share-sheet-cancel" onclick="cCloseShare()">Cancel</button>
+      </div>
+
       <!-- HOME -->
       <div class="scr active" id="c-home">
         <div class="app-hdr">
@@ -531,47 +587,50 @@ body{
 
       <!-- BOOKING FORM -->
       <div class="scr" id="c-booking">
-        <div class="back-hdr" style="padding-bottom:0"><button class="back-btn" onclick="cGoBack()">‹</button><h2>Book a Service</h2></div>
-        <div class="bk-svc-bar">
-          <div class="bk-svc-inner">
-            <div class="bem" id="cbk-em">🏡</div>
-            <div class="bk-svc-info"><h3 id="cbk-name">Service</h3><p>Fill in your details below</p></div>
-          </div>
-        </div>
         <div class="scrl">
-          <div class="form-sec">
-            <div class="form-sec-title">Frequency</div>
-            <div class="freq-grid">
-              <button class="freq-btn active" onclick="cSelFreq(this)">Weekly</button>
-              <button class="freq-btn" onclick="cSelFreq(this)">Bi-Weekly</button>
-              <button class="freq-btn" onclick="cSelFreq(this)">Monthly</button>
-              <button class="freq-btn" onclick="cSelFreq(this)">One-Off</button>
+          <div class="svc-hero-wrap" id="c-book-hero">
+            <div class="svc-hero-icons">
+              <button class="svc-hero-btn" onclick="cGoBack()">‹</button>
+              <div class="svc-hero-icons-right">
+                <button class="svc-hero-btn" id="c-book-like" onclick="cToggleLike(this)">♡</button>
+                <button class="svc-hero-btn" onclick="cShareService()">⇪</button>
+              </div>
             </div>
           </div>
-          <div class="form-sec">
-            <div class="form-sec-title">Number of Rooms</div>
-            <div class="rooms-ctr">
-              <button class="room-btn" onclick="cChgR(-1)">−</button>
-              <div class="room-cnt" id="c-rcnt">2</div>
-              <button class="room-btn" onclick="cChgR(1)">+</button>
+          <div class="svc-detail-card">
+            <div class="svc-d-title" id="cbk-name">Service</div>
+            <div class="svc-d-rating">⭐ <b>4.9</b> (2.3k reviews)</div>
+            <div class="svc-d-facts">
+              <div class="svc-d-fact">🕑 1–3 Hours</div>
+              <div class="svc-d-fact">🛡️ Insured &amp; Trusted</div>
+              <div class="svc-d-fact">⚡ Same Day Available</div>
             </div>
-          </div>
-          <div class="form-sec">
-            <div class="form-sec-title">Your Details</div>
-            <div class="fld"><label>Full Name *</label><input type="text" id="cf-name" placeholder="e.g. Ahmed Al Mansouri"></div>
-            <div class="fld"><label>Phone Number *</label><input type="tel" id="cf-phone" placeholder="+1 234 567 8901"></div>
-            <div class="fld"><label>Email Address</label><input type="email" id="cf-email" placeholder="ahmed@email.com"></div>
-            <div class="fld"><label>Property Address *</label><input type="text" id="cf-addr" placeholder="Street, City, Postcode"></div>
-          </div>
-          <div class="form-sec">
-            <div class="form-sec-title">Date & Time</div>
-            <div class="fld-row">
-              <div class="fld"><label>Preferred Date</label><input type="date" id="cf-date"></div>
-              <div class="fld"><label>Preferred Time</label><input type="time" id="cf-time"></div>
+            <div class="svc-d-desc" id="cbk-desc">Our professional cleaning service gives you a fresh, spotless space. We use safe, eco-friendly products and experienced cleaners you can trust.</div>
+
+            <div class="svc-d-sec-h">What's Included</div>
+            <div class="svc-incl-grid">
+              <div class="svc-incl-item"><div class="svc-incl-ic">🧹</div><div class="svc-incl-lbl">Dusting</div></div>
+              <div class="svc-incl-item"><div class="svc-incl-ic">🌀</div><div class="svc-incl-lbl">Vacuuming</div></div>
+              <div class="svc-incl-item"><div class="svc-incl-ic">🍽️</div><div class="svc-incl-lbl">Kitchen Areas</div></div>
+              <div class="svc-incl-item"><div class="svc-incl-ic">🚿</div><div class="svc-incl-lbl">Bathroom Areas</div></div>
+              <div class="svc-incl-item"><div class="svc-incl-ic">🗑️</div><div class="svc-incl-lbl">Trash Removal</div></div>
             </div>
-            <div class="fld"><label>Special Instructions</label><textarea id="cf-notes" placeholder="Pets, access codes, specific areas..."></textarea></div>
+
+            <div class="svc-d-sec-h">Select Your Package</div>
+            <div class="pkg-grid" id="c-pkg-grid">
+              <div class="pkg-card active" onclick="cSelPkg(this,'Standard',65)"><div class="pkg-check">✓</div><div class="pkg-name">Standard</div><div class="pkg-price">$65 <span>/hr</span></div></div>
+              <div class="pkg-card" onclick="cSelPkg(this,'Deep Clean',95)"><div class="pkg-check">✓</div><div class="pkg-name">Deep Clean</div><div class="pkg-price">$95 <span>/hr</span></div></div>
+              <div class="pkg-card" onclick="cSelPkg(this,'Move In/Out',120)"><div class="pkg-check">✓</div><div class="pkg-name">Move In/Out</div><div class="pkg-price">$120 <span>/hr</span></div></div>
+            </div>
+
+            <div class="svc-d-sec-h" style="margin-bottom:8px">Schedule</div>
+            <div class="svc-sched-row">
+              <div class="fld" style="margin-bottom:0"><label>Preferred Date</label><input type="date" id="cf-date"></div>
+              <div class="fld" style="margin-bottom:0"><label>Preferred Time</label><input type="time" id="cf-time"></div>
+            </div>
+
+            <button class="svc-book-btn" onclick="cConfirm()">Book Now →</button>
           </div>
-          <button class="conf-btn" onclick="cConfirm()">✅ Confirm Booking</button>
         </div>
       </div>
 
@@ -1087,38 +1146,79 @@ function cSwNav(id, btn) {
 }
 
 // ========== CLIENT BOOKING ==========
-var cSvc = '', cEm = '🏡', cFreq = 'Weekly', cRooms = 2;
-
+// Signed-up client's saved details (collected at signup, not re-asked here)
+var clientProfile = { name: 'Ahmed Raza', phone: '+92 300 1234567', email: 'ahmed.raza@email.com', addr: 'DHA Phase 6, Karachi' };
+var cSvc = '', cEm = '🏡', cFreq = 'Standard', cPrice = 65, cRooms = 1;
+var cHeroImgs = [
+  'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=70',
+  'https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=800&q=70',
+  'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=70',
+  'https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=800&q=70',
+  'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=70',
+  'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=70'
+];
+function cHashImg(str) {
+  var h = 0;
+  for (var i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0;
+  return cHeroImgs[h % cHeroImgs.length];
+}
 function cOpenBook(svc, em) {
   cSvc = svc; cEm = em;
-  document.getElementById('cbk-em').textContent = em;
   document.getElementById('cbk-name').textContent = svc;
-  document.getElementById('c-rcnt').textContent = cRooms;
-  document.querySelectorAll('#c-booking .freq-btn').forEach(function(b, i){ b.classList.toggle('active', i === 0); });
-  cFreq = 'Weekly';
+  document.getElementById('cbk-desc').textContent = 'Our professional ' + svc.toLowerCase() + ' service gives you a fresh, spotless result. We use safe, eco-friendly products and experienced, vetted cleaners you can trust.';
+  document.getElementById('c-book-hero').style.backgroundImage = 'linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.05) 100%), url(\'' + cHashImg(svc) + '\')';
+  document.querySelectorAll('#c-pkg-grid .pkg-card').forEach(function(b, i){ b.classList.toggle('active', i === 0); });
+  cFreq = 'Standard'; cPrice = 65;
+  document.getElementById('c-book-like').textContent = '♡';
+  document.getElementById('c-book-like').classList.remove('liked');
+  document.getElementById('cf-date').value = '';
+  document.getElementById('cf-time').value = '';
   cGoTo('c-booking');
 }
-function cSelFreq(btn) {
-  document.querySelectorAll('#c-booking .freq-btn').forEach(function(b){ b.classList.remove('active'); });
+function cSelPkg(btn, name, price) {
+  document.querySelectorAll('#c-pkg-grid .pkg-card').forEach(function(b){ b.classList.remove('active'); });
   btn.classList.add('active');
-  cFreq = btn.textContent;
+  cFreq = name; cPrice = price;
 }
-function cChgR(d) {
-  cRooms = Math.max(1, Math.min(15, cRooms + d));
-  document.getElementById('c-rcnt').textContent = cRooms;
+function cToggleLike(btn) {
+  var liked = btn.classList.toggle('liked');
+  btn.textContent = liked ? '♥' : '♡';
+}
+function cShareService() {
+  var link = 'https://cleanpro.app/service/' + encodeURIComponent(cSvc.toLowerCase().replace(/\s+/g, '-'));
+  document.getElementById('c-share-link').textContent = link;
+  document.getElementById('c-share-backdrop').classList.add('show');
+  document.getElementById('c-share-sheet').classList.add('show');
+}
+function cCloseShare() {
+  document.getElementById('c-share-backdrop').classList.remove('show');
+  document.getElementById('c-share-sheet').classList.remove('show');
+}
+function cCopyLink() {
+  var link = document.getElementById('c-share-link').textContent;
+  var done = function(){ cCloseShare(); showCToast('Link Copied', cSvc + ' link copied to clipboard.', '🔗'); };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(link).then(done, done);
+  } else {
+    done();
+  }
+}
+function cShareVia(channel) {
+  cCloseShare();
+  showCToast('Shared', cSvc + ' shared via ' + channel + '.', '📤');
 }
 
 function cConfirm() {
-  var nm = document.getElementById('cf-name').value || 'Client';
-  var ph = document.getElementById('cf-phone').value || '—';
-  var em = document.getElementById('cf-email').value || '—';
-  var ad = document.getElementById('cf-addr').value || 'Your City';
+  var nm = clientProfile.name;
+  var ph = clientProfile.phone;
+  var em = clientProfile.email;
+  var ad = clientProfile.addr;
   var dt = document.getElementById('cf-date').value;
   var tm = document.getElementById('cf-time').value;
-  var notes = document.getElementById('cf-notes').value;
+  var notes = '';
 
   var job = {
-    id: Date.now(), emoji: cEm, service: cSvc, freq: cFreq, rooms: cRooms,
+    id: Date.now(), emoji: cEm, service: cSvc, freq: cFreq, price: cPrice, rooms: cRooms,
     name: nm, phone: ph, email: em, addr: ad, date: dt, time: tm, notes: notes,
     status: 'pending', cleaner: '—'
   };
@@ -1129,8 +1229,7 @@ function cConfirm() {
   var sc = document.getElementById('c-sum-card');
   sc.innerHTML =
     mkSumRow('Service', cEm + ' ' + cSvc) +
-    mkSumRow('Frequency', cFreq) +
-    mkSumRow('Rooms', cRooms + ' Room' + (cRooms > 1 ? 's' : '')) +
+    mkSumRow('Package', cFreq + ' ($' + cPrice + '/hr)') +
     mkSumRow('Name', nm) +
     mkSumRow('Phone', ph) +
     mkSumRow('Address', ad) +
@@ -1184,7 +1283,7 @@ function renderCBookings() {
     return;
   }
   el.innerHTML = jobs.map(function(j){
-    return '<div class="bk-card" onclick="cOpenDetail(' + j.id + ')"><div class="bk-card-head"><div class="bk-card-ic">' + j.emoji + '</div><div class="bk-info" style="flex:1"><h4>' + j.service + '</h4><p>' + j.freq + ' · ' + j.rooms + ' room' + (j.rooms > 1 ? 's' : '') + '</p></div>' + statusPillC(j.status) + '</div><div class="bk-card-body">' + mkRow('Date', (j.date ? fmtDate(j.date) : 'TBC')) + mkRow('Address', j.addr) + '</div><div class="bk-card-foot"><button class="view-det-btn">View Full Details →</button></div></div>';
+    return '<div class="bk-card" onclick="cOpenDetail(' + j.id + ')"><div class="bk-card-head"><div class="bk-card-ic">' + j.emoji + '</div><div class="bk-info" style="flex:1"><h4>' + j.service + '</h4><p>' + j.freq + ' · $' + j.price + '/hr' + '</p></div>' + statusPillC(j.status) + '</div><div class="bk-card-body">' + mkRow('Date', (j.date ? fmtDate(j.date) : 'TBC')) + mkRow('Address', j.addr) + '</div><div class="bk-card-foot"><button class="view-det-btn">View Full Details →</button></div></div>';
   }).join('');
 }
 
@@ -1193,7 +1292,7 @@ function cOpenDetail(jobId) {
   if (!j) return;
   document.getElementById('det-em').textContent = j.emoji;
   document.getElementById('det-name').textContent = j.service;
-  document.getElementById('det-freq').textContent = j.freq + ' · ' + j.rooms + ' Room' + (j.rooms > 1 ? 's' : '');
+  document.getElementById('det-freq').textContent = j.freq + ' · $' + j.price + '/hr';
   var sb = document.getElementById('det-status-banner');
   if (j.status === 'accepted') {
     sb.innerHTML = '<div class="status-banner accepted"><span class="status-banner-ic">✅</span><div class="status-banner-txt"><h5>Booking Confirmed</h5><p>Alex Johnson will handle your clean.</p></div></div>';
@@ -1206,7 +1305,7 @@ function cOpenDetail(jobId) {
     mkRow('Date', (j.date ? fmtDate(j.date) : 'TBC')) +
     mkRow('Time', (j.time || 'TBC')) +
     mkRow('Frequency', j.freq) +
-    mkRow('Rooms', j.rooms + ' Room' + (j.rooms > 1 ? 's' : '')) +
+    mkRow('Package Price', '$' + j.price + '/hr') +
     (j.notes ? mkRow('Notes', j.notes) : '');
   document.getElementById('det-client').innerHTML =
     mkRow('Name', j.name) + mkRow('Phone', j.phone) + mkRow('Email', j.email) + mkRow('Address', j.addr);
@@ -1309,7 +1408,7 @@ function renderKDash() {
     el.innerHTML = '<div style="padding:6px 14px 12px;font-size:.66rem;color:var(--neutral)">No new jobs. They appear when clients book.</div>';
   } else {
     el.innerHTML = newJobs.slice(0, 2).map(function(j){
-      return '<div class="job-card new-job clickable" onclick="kOpenJobDetail(' + j.id + ')"><div class="job-top"><div class="job-ic">' + j.emoji + '</div><div class="job-info"><h4>' + j.service + '</h4><p>' + j.freq + ' · ' + j.rooms + ' room' + (j.rooms > 1 ? 's' : '') + '</p></div><span class="pill pill-new">New</span></div><div class="job-meta"><div class="job-meta-item"><div class="lbl">Client</div><div class="val">' + j.name + '</div></div><div class="job-meta-item"><div class="lbl">Date</div><div class="val">' + (j.date ? fmtDate(j.date) : 'TBC') + '</div></div><div class="job-meta-item"><div class="lbl">Time</div><div class="val">' + (j.time || 'TBC') + '</div></div><div class="job-meta-item"><div class="lbl">Zone</div><div class="val">Local Zone</div></div></div><div class="tap-hint">Tap to view full details & accept</div></div>';
+      return '<div class="job-card new-job clickable" onclick="kOpenJobDetail(' + j.id + ')"><div class="job-top"><div class="job-ic">' + j.emoji + '</div><div class="job-info"><h4>' + j.service + '</h4><p>' + j.freq + ' · $' + j.price + '/hr' + '</p></div><span class="pill pill-new">New</span></div><div class="job-meta"><div class="job-meta-item"><div class="lbl">Client</div><div class="val">' + j.name + '</div></div><div class="job-meta-item"><div class="lbl">Date</div><div class="val">' + (j.date ? fmtDate(j.date) : 'TBC') + '</div></div><div class="job-meta-item"><div class="lbl">Time</div><div class="val">' + (j.time || 'TBC') + '</div></div><div class="job-meta-item"><div class="lbl">Zone</div><div class="val">Local Zone</div></div></div><div class="tap-hint">Tap to view full details & accept</div></div>';
     }).join('');
   }
 
@@ -1364,7 +1463,7 @@ function kOpenJobDetail(jobId) {
   if (!j) return;
   document.getElementById('kdet-em').textContent = j.emoji;
   document.getElementById('kdet-name').textContent = j.service;
-  document.getElementById('kdet-sub').textContent = j.freq + ' · ' + j.rooms + ' Room' + (j.rooms > 1 ? 's' : '') + (j.date ? ' · ' + fmtDate(j.date) : '');
+  document.getElementById('kdet-sub').textContent = j.freq + ' · $' + j.price + '/hr' + (j.date ? ' · ' + fmtDate(j.date) : '');
 
   var sr = document.getElementById('kdet-status-row');
   if (j.status === 'accepted') {
@@ -1379,7 +1478,7 @@ function kOpenJobDetail(jobId) {
     mkKRow('Time', (j.time || 'TBC')) +
     mkKRow('Service', j.emoji + ' ' + j.service) +
     mkKRow('Frequency', j.freq) +
-    mkKRow('Rooms', j.rooms + ' Room' + (j.rooms > 1 ? 's' : '')) +
+    mkKRow('Package Price', '$' + j.price + '/hr') +
     (j.notes ? mkKRow('Notes', j.notes) : '');
   document.getElementById('kdet-client').innerHTML =
     mkKRow('Name', j.name) + mkKRow('Phone', j.phone) + mkKRow('Address', j.addr);
@@ -1547,7 +1646,7 @@ function aOpenDetail(jobId) {
   if (!j) return;
   document.getElementById('adet-em').textContent = j.emoji;
   document.getElementById('adet-name').textContent = j.service;
-  document.getElementById('adet-sub').textContent = j.freq + ' · ' + j.rooms + ' Room' + (j.rooms > 1 ? 's' : '') + (j.date ? ' · ' + fmtDate(j.date) : '');
+  document.getElementById('adet-sub').textContent = j.freq + ' · $' + j.price + '/hr' + (j.date ? ' · ' + fmtDate(j.date) : '');
 
   var sr = document.getElementById('adet-status-row');
   var stBg = j.status === 'accepted' ? 'var(--green-xs)' : j.status === 'rejected' ? 'var(--red-xs)' : 'var(--amber-l)';
@@ -1561,7 +1660,7 @@ function aOpenDetail(jobId) {
     mkKRow('Date', (j.date ? fmtDate(j.date) : 'TBC')) +
     mkKRow('Time', (j.time || 'TBC')) +
     mkKRow('Frequency', j.freq) +
-    mkKRow('Rooms', j.rooms + ' Room' + (j.rooms > 1 ? 's' : '')) +
+    mkKRow('Package Price', '$' + j.price + '/hr') +
     (j.notes ? mkKRow('Notes', j.notes) : '');
   document.getElementById('adet-client').innerHTML =
     mkKRow('Name', j.name) + mkKRow('Phone', j.phone) + mkKRow('Email', j.email) + mkKRow('Address', j.addr);
